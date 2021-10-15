@@ -4,7 +4,7 @@ Technical User Traffic Control Light
 Pedestrian CL
 Wants to be able to switch from RED to GREEN to RED as a default behavior
 
-Can be extended to RED to GREEN-to-GREEN BLINKING to RED
+Can be extended from RED to GREEN-to-GREEN BLINKING to RED
 
 Traffic CL
 Wants to use the German standard of RED to RED/YELLOW to GREEN to YELLOW to RED
