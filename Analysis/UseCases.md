@@ -6,5 +6,5 @@ Wants to be able to switch from RED to GREEN to RED as a default behavior and ca
 
 ## Traffic Light User
 Wants to change from RED to GREEN and from GREEN to RED with the specific nation standards included <br>
--> (German standard of RED to RED/YELLOW to GREEN to YELLOW to RED additional arrows for the control light) <br>
--> (Dutch standard of RED to GREEN to YELLOW to RED)
+-> (German standard: RED to RED/YELLOW to GREEN to YELLOW to RED additional arrows for the control light) <br>
+-> (Dutch standard: RED to GREEN to YELLOW to RED)
