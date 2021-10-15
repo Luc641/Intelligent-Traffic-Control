@@ -5,7 +5,7 @@
 | Pre-condition: | Traffic light is RED |
 | Main success scenario: | 1. Traffic light wants to change to GREEN<br>2. System switches light to GREEN <br>3. Traffic light wants to change to RED<br>4. System switches light to RED|
 | Result: | Traffic light switches states|
-| Extensions: | 2.1. System applies nation standard (GER standard RED to RED/YELLOW to GREEN)<br> 4.1. System applies nation standard (GER/NL standard:GREEN to YELLOW to RED)<br>
+| Extensions: | 2.1 System applies nation standard (GER standard RED to RED/YELLOW to GREEN)<br> 4.1 System applies nation standard (GER/NL standard:GREEN to YELLOW to RED)<br>
 
 
 <br><br>
