@@ -14,7 +14,7 @@
 | Actor: | Pedestrian Control Light|
 | Description: | Pedestrian Light wants to complete a light switch sequence  |
 | Pre-condition: | 1. The Pedestrian light shows RED|
-| Main success scenario: | 1.The Pedestrian light wants to change to GREEN <br>2.The system changes the state to GREEN <br>3. The Pedestrian light wants to change to RED <br>4.The system changes the state to RED. |
+| Main success scenario: | 1. The Pedestrian light wants to change to GREEN <br>2. The system changes the state to GREEN <br>3. The Pedestrian light wants to change to RED <br>4. The system changes the state to RED. |
 | Result: | A sequence has been completed |
 | Extensions: | 4.1 The system changes the state to GREEN BLINKING.<br> 4.2 The system changes the state to RED. |
 | Exceptions: | - |
