@@ -11,12 +11,12 @@
 
 
 <br><br>
-| Name: | Create bookings |
+| Name: | Pedestrian Light switch |
 |-|-|
-| Actor: | Sales officer |
-| Description: | Sales employee creates the booking for the customer |
-| Pre-condition: | 1. The sales employee needs to be logged in <br>2. Flight needs to exist in the system |
-| Main success scenario: | 1.Sales Employee enters the destination and arrival airport of the first flight that belongs to the new booking <br>2.The system loads possible flights <br>3.Sales employee selects flight <br>4.The sales employee enters the desired extra options <br>5.System saves the new booking |
-| Result: | Booking has been made |
-| Extensions: | - |
-| Exceptions: | 2a.  1: There are no flights available. 2: Go back to step 1  |
+| Actor: | Pedestrian Control Light|
+| Description: | Pedestrian Light wants to switch from RED to GREEN to RED |
+| Pre-condition: | 1. The Pedestrian light shows RED|
+| Main success scenario: | 1.The Pedestrian light wants to change to GREEN <br>2.The system changes the state to GREEN <br>3. The Pedestrian light wants to change to RED <br>4.The system changes the state to RED. |
+| Result: | A sequence has been completed |
+| Extensions: | 4.1 The system changes the state to GREEN BLINKING.<br> 5. The system changes the state to RED. |
+| Exceptions: | - |
