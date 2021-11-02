@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Implementation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Implementation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Switchable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Switchable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
