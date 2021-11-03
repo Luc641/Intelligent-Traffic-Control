@@ -20,12 +20,16 @@ public class GermanStandard implements TrafficLight {
     @Override
     public void sequnce() throws InterruptedException {
         state = TrafficLightStates.RED_YELLOW;
+        System.out.println(""+state);
         TimeUnit.SECONDS.sleep(2);
         state = TrafficLightStates.GREEN;
+        System.out.println(""+state);
         TimeUnit.SECONDS.sleep(greenPhaseDuration);
         state = TrafficLightStates.YELLOW;
+        System.out.println(""+state);
         TimeUnit.SECONDS.sleep(3);
         state = TrafficLightStates.RED;
+        System.out.println(""+state);
     }
 
 
