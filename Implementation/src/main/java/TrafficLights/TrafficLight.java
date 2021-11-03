@@ -2,9 +2,9 @@ package TrafficLights;
 
 public interface TrafficLight {
 
-    public void sequnce() throws InterruptedException;
+     void sequence() throws InterruptedException;
 
-    public TrafficLightStates getTrafficLightStates();
+     TrafficLightStates getTrafficLightStates();
 
-    public void setGreenphaseDuration(int duration);
+     void setGreenPhaseDuration(int duration);
 }
