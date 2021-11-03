@@ -47,3 +47,5 @@ Wants to change from RED to GREEN and from GREEN to RED with the specific nation
 
 # Use Case Description
 <img src = https://github.com/FontysVenlo/intelligent-traffic-control-prj3-g13-itc/blob/main/Analysis/UseCaseDiagram/PRJ3-UseCaseDiagram-TCL.svg>
+
+[Use Case Diagram Relationships Explained with Examples](https://creately.com/blog/diagrams/use-case-diagram-relationships/ "Title")
