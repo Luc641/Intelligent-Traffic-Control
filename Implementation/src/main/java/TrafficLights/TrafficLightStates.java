@@ -8,6 +8,7 @@ public enum TrafficLightStates {
     YELLOW_BLINKING,
     GREEN_ARROW,
     YELLOW_ARROW,
-    RED_ARROW
+    RED_ARROW,
+    GREEN_BLINKING;
 }
 
