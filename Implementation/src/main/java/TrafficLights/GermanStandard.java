@@ -1,5 +1,4 @@
 package TrafficLights;
-
 import java.util.concurrent.TimeUnit;
 
 public class GermanStandard implements TrafficLight {
@@ -19,7 +18,7 @@ public class GermanStandard implements TrafficLight {
     }
 
     @Override
-    public void sequence() throws InterruptedException {
+    public void sequence() throws InterruptedException{
         state = TrafficLightStates.RED_YELLOW;
         System.out.println(""+state);
         TimeUnit.SECONDS.sleep(2);
@@ -32,7 +31,4 @@ public class GermanStandard implements TrafficLight {
         state = TrafficLightStates.RED;
         System.out.println(""+state);
     }
-
-
-
 }
