@@ -1,6 +1,6 @@
 package TrafficLights;
 
-public enum TrafficLightStates implements Switchable<State> {
+public enum TrafficLightStates {
     RED,
     YELLOW,
     GREEN,
