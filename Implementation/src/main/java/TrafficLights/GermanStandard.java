@@ -5,6 +5,7 @@ public class GermanStandard implements TrafficLight {
 
     public TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 45;
+    private int index;
 
 
     @Override
@@ -15,6 +16,11 @@ public class GermanStandard implements TrafficLight {
     @Override
     public void setGreenPhaseDuration(int duration) {
         this.greenPhaseDuration = duration;
+    }
+
+    @Override
+    public int getIndex() {
+        return index;
     }
 
     @Override
