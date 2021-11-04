@@ -1,13 +1,8 @@
 package TrafficLights;
 
 public class NightMode implements TrafficLight{
-    int index;
-    public TrafficLightStates state = TrafficLightStates.YELLOW_BLINKING;
 
-    @Override
-    public int getIndex() {
-        return index;
-    }
+    public TrafficLightStates state = TrafficLightStates.YELLOW_BLINKING;
 
     @Override
     public void sequence() throws InterruptedException {

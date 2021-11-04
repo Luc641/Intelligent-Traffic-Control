@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="changes for Road">
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Standards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Standards.java" afterDir="false" />
+    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
