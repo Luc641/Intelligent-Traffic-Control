@@ -1,23 +1,24 @@
 package TrafficLights;
 
-import javax.sound.sampled.LineUnavailableException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Intersection {
-    ArrayList<TrafficLight> trafficLights = new ArrayList<>();
+
+    Road horizontal;
+    Road vertical;
 
     public Intersection(Standards standards) {
         if (standards.equals(Standards.GERMAN)) {
-            for (int i = 0; i < 4; i++) {
-                trafficLights.add(new GermanStandard(i));
-            }
+            horizontal = new Road(standards);
+            vertical = new Road(standards);
+        } else if (standards.equals(Standards.DUTCH)) {
+            horizontal = new Road(standards);
+            vertical = new Road(standards);
+        } else if (standards.equals(Standards.DUTCH)) {
+            horizontal = new Road(standards);
+            vertical = new Road(standards);
         }
-    }
-
-    public List<TrafficLight> getTrafficLights() {
-        return trafficLights;
     }
 /*
     public void sequence() {
