@@ -1,5 +1,6 @@
 import TrafficLights.GermanStandard;
 import TrafficLights.PedestrianLightStandard;
+import TrafficLights.TrafficLightStates;
 
 import javax.sound.sampled.LineUnavailableException;
 
