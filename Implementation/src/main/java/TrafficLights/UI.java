@@ -1,3 +1,4 @@
+/*
 package TrafficLights;
 
 import com.sun.glass.ui.Application;
@@ -41,3 +42,6 @@ private void changeColour(TrafficLightStates trafficLightStates){
     }
 
 }
+
+
+ */

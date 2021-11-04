@@ -13,13 +13,14 @@ public class PedestrianLightStandard implements TrafficLight{
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
         state = TrafficLightStates.GREEN;
-        System.out.println(""+state);
+        TrafficLightStates.GREEN.print();
         beep(greenPhaseDuration);
         state = TrafficLightStates.GREEN_BLINKING;
-        System.out.println(""+state);
+        TrafficLightStates.GREEN_BLINKING.print();
         TimeUnit.SECONDS.sleep(3);
         state = TrafficLightStates.RED;
-        System.out.println(""+state);
+        TrafficLightStates.RED.print();
+
     }
 
     @Override
@@ -33,7 +34,7 @@ public class PedestrianLightStandard implements TrafficLight{
     }
 
     public void beep(int duration) throws LineUnavailableException, InterruptedException {
-        byte[] buf = new byte[ 1 ];;
+        byte[] buf = new byte[ 1 ];
         AudioFormat af = new AudioFormat( (float )44100, 8, 1, true, false );
         SourceDataLine sdl = AudioSystem.getSourceDataLine( af );
         sdl.open();
@@ -60,5 +61,5 @@ public class PedestrianLightStandard implements TrafficLight{
         sdl.drain();
         sdl.stop();
         Thread.sleep(250);
-    };
+    }
 }
