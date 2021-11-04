@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
+    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="UI 1st try">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/GermanStandard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/GermanStandard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/PedestrianLightStandard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/PedestrianLightStandard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLightStates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLightStates.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
     </list>
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="UI 1st try" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +30,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="20MHEgE43P95nIin3vV5whBf8DG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -52,34 +49,6 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.UI (1)">
-    <configuration name="UI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrafficLights.UI" />
-      <module name="TrafficLightControl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TrafficLights.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UI" />
-      <module name="TrafficLightControl" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UI (1)" />
-        <item itemvalue="Application.UI" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="RunManager" selected="Application.main">
     <configuration name="Beep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TrafficLights.Beep" />
@@ -95,8 +64,10 @@
       </method>
     </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="Implementation" />
+      <module name="TrafficLightControl" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635847427244</updated>
       <workItem from="1635934688404" duration="1856000" />
+      <workItem from="1636024269032" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="Grammar">
       <created>1635933146433</created>
@@ -132,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635937731503</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UI 1st try">
+      <created>1635937880912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635937880912</updated>
+    </task>
+    <task id="LOCAL-00004" summary="UI 1st try">
+      <created>1635938055305</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635938055305</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
