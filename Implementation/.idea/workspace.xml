@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Standards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PedestrianLightStandardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TrafficLightStatesTest.java" afterDir="false" />
+    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="changes for the Intersection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLightStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/PedestrianLightStandard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/PedestrianLightStandard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLightStates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TrafficLights/TrafficLightStates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635847427244</updated>
       <workItem from="1635934688404" duration="1856000" />
-      <workItem from="1636024269032" duration="8978000" />
+      <workItem from="1636024269032" duration="10122000" />
     </task>
     <task id="LOCAL-00001" summary="Grammar">
       <created>1635933146433</created>
@@ -154,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636025771156</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changes for the Intersection">
+      <created>1636033464031</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636033464031</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +170,7 @@
     <MESSAGE value="UI 1st try" />
     <MESSAGE value="Added print methods for the states" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="changes for the Intersection" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes for the Intersection" />
   </component>
 </project>

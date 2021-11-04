@@ -9,17 +9,6 @@ public class GermanStandard implements TrafficLight {
     public final Standards standards = Standards.GERMAN;
 
     @Override
-    public int getIndex() {
-        return index;
-    }
-
-    public GermanStandard(int index) {
-        this.index = index;
-    }
-
-    int index;
-
-    @Override
     public TrafficLightStates getTrafficLightStates() {
         return state;
     }
