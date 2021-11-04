@@ -3,10 +3,15 @@ package TrafficLights;
 import java.util.concurrent.TimeUnit;
 
 public class DutchStandard implements TrafficLight{
-
+    int index;
     public TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 45;
 
+
+    @Override
+    public int getIndex() {
+        return index;
+    }
 
     @Override
     public void sequence() throws InterruptedException {

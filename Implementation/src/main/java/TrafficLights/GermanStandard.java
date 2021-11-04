@@ -1,12 +1,23 @@
 package TrafficLights;
+
 import java.util.concurrent.TimeUnit;
 
 public class GermanStandard implements TrafficLight {
 
     public TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 45;
-    private int index;
+    public final Standards standards = Standards.GERMAN;
 
+    @Override
+    public int getIndex() {
+        return index;
+    }
+
+    public GermanStandard(int index) {
+        this.index = index;
+    }
+
+    int index;
 
     @Override
     public TrafficLightStates getTrafficLightStates() {
@@ -19,22 +30,17 @@ public class GermanStandard implements TrafficLight {
     }
 
     @Override
-    public int getIndex() {
-        return index;
-    }
-
-    @Override
-    public void sequence() throws InterruptedException{
+    public void sequence() throws InterruptedException {
         state = TrafficLightStates.RED_YELLOW;
-        System.out.println(""+state);
+        System.out.println("" + state);
         TimeUnit.SECONDS.sleep(2);
         state = TrafficLightStates.GREEN;
-        System.out.println(""+state);
+        System.out.println("" + state);
         TimeUnit.SECONDS.sleep(greenPhaseDuration);
         state = TrafficLightStates.YELLOW;
-        System.out.println(""+state);
+        System.out.println("" + state);
         TimeUnit.SECONDS.sleep(3);
         state = TrafficLightStates.RED;
-        System.out.println(""+state);
+        System.out.println("" + state);
     }
 }

@@ -4,7 +4,7 @@ import javax.sound.sampled.LineUnavailableException;
 
 public interface TrafficLight {
 
-     int getIndex();
+    int getIndex();
 
      void sequence() throws InterruptedException, LineUnavailableException;
 
