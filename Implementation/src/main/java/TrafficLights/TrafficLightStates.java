@@ -37,6 +37,10 @@ public enum TrafficLightStates {
 
     GREEN_BLINKING {
 
+    },
+
+    OFF{
+
     };
 
 

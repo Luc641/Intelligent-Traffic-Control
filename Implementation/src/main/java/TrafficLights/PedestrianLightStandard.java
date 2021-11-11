@@ -30,7 +30,7 @@ public class PedestrianLightStandard implements TrafficLight {
 
     @Override
     public void setTrafficLightStates(TrafficLightStates state) {
-        
+
     }
 
     @Override
@@ -40,7 +40,7 @@ public class PedestrianLightStandard implements TrafficLight {
 
     @Override
     public void nightMode() {
-        TrafficLight.super.nightMode();
+        state = TrafficLightStates.OFF;
     }
 
     public void beep(int duration) throws LineUnavailableException, InterruptedException {
