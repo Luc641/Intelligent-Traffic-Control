@@ -4,7 +4,6 @@ public enum Standards {
 
     GERMAN(new GermanStandard()),
     DUTCH(new DutchStandard()),
-    NIGHT(new NightMode()),
     PEDESTRIAN(new PedestrianLightStandard()),
     GERMAN_ARROW_LEFT(new GermanStandard()),
     GERMAN_ARROW_RIGHT(new GermanStandard());
