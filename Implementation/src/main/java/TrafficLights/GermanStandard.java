@@ -30,7 +30,7 @@ public class GermanStandard implements TrafficLight {
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
         state = TrafficLightStates.RED_YELLOW;
-        System.out.println("" + state);
+        TrafficLightStates.RED_YELLOW.printCurrent();
         TimeUnit.SECONDS.sleep(2);
         TrafficLight.super.sequence();
     }

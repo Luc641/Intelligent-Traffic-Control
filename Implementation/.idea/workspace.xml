@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="good gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="c0657ca0-5046-45b3-b13c-00d4f7edad4c" name="Changes by jacob" comment=""/>
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
-    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/NightMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
+    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="sequence method delegateable">
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" afterDir="false" />
     </list>
+    <list id="c0657ca0-5046-45b3-b13c-00d4f7edad4c" name="Changes by jacob" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +26,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="20MHEgE43P95nIin3vV5whBf8DG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -178,7 +169,28 @@
       <option name="project" value="LOCAL" />
       <updated>1636035183418</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sequence method delegateable">
+      <created>1636626947154</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636626947154</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sequence method delegateable">
+      <created>1636627006715</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1636627006715</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sequence method delegateable">
+      <created>1636627111774</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636627111774</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +216,7 @@
     <MESSAGE value="changes for the Intersection" />
     <MESSAGE value="changes for Road" />
     <MESSAGE value="good gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="good gitignore" />
+    <MESSAGE value="sequence method delegateable" />
+    <option name="LAST_COMMIT_MESSAGE" value="sequence method delegateable" />
   </component>
 </project>
