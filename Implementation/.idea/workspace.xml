@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="sequence method delegateable">
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/TrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
     </list>
     <list id="c0657ca0-5046-45b3-b13c-00d4f7edad4c" name="Changes by jacob" comment="" />
     <option name="SHOW_DIALOG" value="false" />

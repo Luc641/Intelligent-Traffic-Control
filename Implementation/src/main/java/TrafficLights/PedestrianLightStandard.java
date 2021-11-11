@@ -7,8 +7,8 @@ import javax.sound.sampled.SourceDataLine;
 import java.util.concurrent.TimeUnit;
 
 public class PedestrianLightStandard implements TrafficLight {
-    TrafficLightStates state = TrafficLightStates.RED;
-    int greenPhaseDuration = 5;
+    private TrafficLightStates state = TrafficLightStates.RED;
+    private int greenPhaseDuration = 5;
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {

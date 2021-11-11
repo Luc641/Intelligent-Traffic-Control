@@ -3,7 +3,8 @@ package TrafficLights;
 import javax.sound.sampled.LineUnavailableException;
 
 public class DutchStandard implements TrafficLight{
-    TrafficLightStates state = TrafficLightStates.RED;
+
+    private TrafficLightStates state = TrafficLightStates.RED;
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {

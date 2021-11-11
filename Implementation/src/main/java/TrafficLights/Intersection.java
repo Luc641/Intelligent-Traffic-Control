@@ -5,8 +5,8 @@ import javax.sound.sampled.LineUnavailableException;
 
 public class Intersection {
 
-    Road horizontal;
-    Road vertical;
+    private Road horizontal;
+    private Road vertical;
 
 
     public Intersection(Standards standards) {
@@ -17,10 +17,10 @@ public class Intersection {
 
 
     public void sequence() throws LineUnavailableException, InterruptedException {
-        vertical.trafficLightLeft.sequence();
-        vertical.trafficLightRight.sequence();
-        horizontal.trafficLightLeft.sequence();
-        horizontal.trafficLightRight.sequence();
+        vertical.getTrafficLightLeft().sequence();
+        vertical.getTrafficLightRight().sequence();
+        horizontal.getTrafficLightLeft().sequence();
+        horizontal.getTrafficLightRight().sequence();
 
     }
 

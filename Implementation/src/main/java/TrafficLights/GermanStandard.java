@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public class GermanStandard implements TrafficLight {
 
-    public TrafficLightStates state = TrafficLightStates.RED;
+    private TrafficLightStates state = TrafficLightStates.RED;
 
     @Override
     public TrafficLightStates getTrafficLightStates() {
