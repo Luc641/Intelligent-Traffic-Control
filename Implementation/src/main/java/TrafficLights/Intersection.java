@@ -19,6 +19,8 @@ public class Intersection {
     public void sequence() throws LineUnavailableException, InterruptedException {
         vertical.trafficLightLeft.sequence();
         vertical.trafficLightRight.sequence();
+        horizontal.trafficLightLeft.sequence();
+        horizontal.trafficLightRight.sequence();
 
     }
 
