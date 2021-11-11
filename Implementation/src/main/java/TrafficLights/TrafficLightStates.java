@@ -43,9 +43,4 @@ public enum TrafficLightStates {
 
     };
 
-
-    public void printCurrent() {
-        System.out.println(TrafficLightStates.valueOf(String.valueOf(TrafficLightStates.this)));
-    }
-
 }
