@@ -8,13 +8,13 @@ public interface TrafficLight {
       default void sequence() throws InterruptedException, LineUnavailableException {
 
           TrafficLightStates trafficLightStates = TrafficLightStates.GREEN;
-          System.out.println("" + trafficLightStates);
+          TrafficLightStates.GREEN.printCurrent();
           TimeUnit.SECONDS.sleep(45);
           trafficLightStates = TrafficLightStates.YELLOW;
-          System.out.println("" + trafficLightStates);
+          TrafficLightStates.YELLOW.printCurrent();
           TimeUnit.SECONDS.sleep(3);
           trafficLightStates = TrafficLightStates.RED;
-          System.out.println("" + trafficLightStates);
+          TrafficLightStates.RED.printCurrent();
      }
 
      TrafficLightStates getTrafficLightStates();
