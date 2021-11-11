@@ -1,30 +1,15 @@
 package TrafficLights;
 
+import javax.sound.sampled.LineUnavailableException;
 import java.util.concurrent.TimeUnit;
 
 public class DutchStandard implements TrafficLight{
     int index;
-    public TrafficLightStates state = TrafficLightStates.RED;
-    private int greenPhaseDuration = 45;
-
+    TrafficLightStates state = TrafficLightStates.RED;
 
     @Override
-    public int getIndex() {
-        return index;
-    }
-
-    @Override
-    public void sequence() throws InterruptedException {
-
-        state = TrafficLightStates.GREEN;
-        System.out.println("" + state);
-        TimeUnit.SECONDS.sleep(greenPhaseDuration);
-        state = TrafficLightStates.YELLOW;
-        System.out.println("" + state);
-        TimeUnit.SECONDS.sleep(3);
-        state = TrafficLightStates.RED;
-        System.out.println("" + state);
-
+    public void sequence() throws InterruptedException, LineUnavailableException {
+        TrafficLight.super.sequence();
     }
 
     @Override
@@ -34,6 +19,5 @@ public class DutchStandard implements TrafficLight{
 
     @Override
     public void setGreenPhaseDuration(int duration) {
-        this.greenPhaseDuration = duration;
     }
 }
