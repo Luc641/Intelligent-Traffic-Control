@@ -13,7 +13,7 @@ public class DutchStandard implements TrafficLight{
     }
 
     @Override
-    public TrafficLightStates getTrafficLightStates() {
+    public TrafficLightStates getTrafficLightState() {
         return state;
     }
 

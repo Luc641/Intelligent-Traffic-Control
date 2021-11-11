@@ -2,9 +2,9 @@ import TrafficLights.*;
 
 import javax.sound.sampled.LineUnavailableException;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws InterruptedException, LineUnavailableException {
-        GermanStandard test = new GermanStandard();
+        TrafficLight test = new PedestrianLightStandard();
         test.sequence();
     }
 }

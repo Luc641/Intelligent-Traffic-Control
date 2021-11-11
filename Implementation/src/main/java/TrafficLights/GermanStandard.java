@@ -9,7 +9,7 @@ public class GermanStandard implements TrafficLight {
     private int greenPhaseDuration = 30;
 
     @Override
-    public TrafficLightStates getTrafficLightStates() {
+    public TrafficLightStates getTrafficLightState() {
         return state;
     }
 

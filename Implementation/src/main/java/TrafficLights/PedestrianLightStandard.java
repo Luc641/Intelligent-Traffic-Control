@@ -16,12 +16,12 @@ public class PedestrianLightStandard implements TrafficLight {
         setTrafficLightState(TrafficLightStates.GREEN);
         beep(greenPhaseDuration);
         setTrafficLightState(TrafficLightStates.GREEN_BLINKING);
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(2);
         setTrafficLightState(TrafficLightStates.RED);
     }
 
     @Override
-    public TrafficLightStates getTrafficLightStates() {
+    public TrafficLightStates getTrafficLightState() {
         return state;
     }
 
@@ -43,7 +43,7 @@ public class PedestrianLightStandard implements TrafficLight {
 
     @Override
     public void nightMode() {
-        state = TrafficLightStates.OFF;
+        setTrafficLightState(TrafficLightStates.OFF);
     }
 
     public void beep(int duration) throws LineUnavailableException, InterruptedException {

@@ -9,9 +9,9 @@ public class Intersection {
     private Road vertical;
 
 
-    public Intersection(Standards standards) {
-        horizontal = new Road(standards);
-        vertical = new Road(standards);
+    public Intersection(Standards standard) {
+        horizontal = new Road(standard);
+        vertical = new Road(standard);
 
     }
 

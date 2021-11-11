@@ -4,9 +4,9 @@ public class Road {
     private TrafficLight trafficLightRight;
     private TrafficLight trafficLightLeft;
 
-    public Road(Standards standards) {
-       trafficLightRight = standards.getTrafficLight();
-       trafficLightLeft = standards.getTrafficLight();
+    public Road(Standards standard) {
+       trafficLightRight = standard.getTrafficLight();
+       trafficLightLeft = standard.getTrafficLight();
     }
 
     public TrafficLight getTrafficLightRight() {

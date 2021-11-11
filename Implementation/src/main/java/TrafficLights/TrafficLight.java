@@ -14,7 +14,7 @@ public interface TrafficLight {
      }
 
 
-    TrafficLightStates getTrafficLightStates();
+    TrafficLightStates getTrafficLightState();
 
     void setTrafficLightState(TrafficLightStates state);
 
