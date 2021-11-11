@@ -8,10 +8,6 @@ public class DutchStandard implements TrafficLight{
     private int greenPhaseDuration = 45;
 
 
-    @Override
-    public int getIndex() {
-        return index;
-    }
 
     @Override
     public void sequence() throws InterruptedException {
