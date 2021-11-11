@@ -18,6 +18,16 @@ public class DutchStandard implements TrafficLight{
     }
 
     @Override
+    public void setTrafficLightStates(TrafficLightStates state) {
+
+    }
+
+    @Override
     public void setGreenPhaseDuration(int duration) {
+    }
+
+    @Override
+    public void nightMode() {
+        TrafficLight.super.nightMode();
     }
 }

@@ -29,8 +29,18 @@ public class PedestrianLightStandard implements TrafficLight {
     }
 
     @Override
+    public void setTrafficLightStates(TrafficLightStates state) {
+        
+    }
+
+    @Override
     public void setGreenPhaseDuration(int duration) {
         this.greenPhaseDuration = duration;
+    }
+
+    @Override
+    public void nightMode() {
+        TrafficLight.super.nightMode();
     }
 
     public void beep(int duration) throws LineUnavailableException, InterruptedException {
