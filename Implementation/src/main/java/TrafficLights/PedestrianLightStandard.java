@@ -7,20 +7,17 @@ import javax.sound.sampled.SourceDataLine;
 import java.util.concurrent.TimeUnit;
 
 public class PedestrianLightStandard implements TrafficLight {
+
     private TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 5;
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
-        state = TrafficLightStates.GREEN;
-        TrafficLightStates.GREEN.printCurrent();
+        setTrafficLightState(TrafficLightStates.GREEN);
         beep(greenPhaseDuration);
-        state = TrafficLightStates.GREEN_BLINKING;
-        TrafficLightStates.GREEN_BLINKING.printCurrent();
+        setTrafficLightState(TrafficLightStates.GREEN_BLINKING);
         TimeUnit.SECONDS.sleep(3);
-        state = TrafficLightStates.RED;
-        TrafficLightStates.RED.printCurrent();
-
+        setTrafficLightState(TrafficLightStates.RED);
     }
 
     @Override
@@ -29,13 +26,19 @@ public class PedestrianLightStandard implements TrafficLight {
     }
 
     @Override
-    public void setTrafficLightStates(TrafficLightStates state) {
-
+    public void setTrafficLightState(TrafficLightStates state) {
+        this.state = state;
+        System.out.println(state);
     }
 
     @Override
     public void setGreenPhaseDuration(int duration) {
         this.greenPhaseDuration = duration;
+    }
+
+    @Override
+    public int getGreenPhaseDuration() {
+        return greenPhaseDuration;
     }
 
     @Override

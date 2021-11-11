@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class GermanStandard implements TrafficLight {
 
     private TrafficLightStates state = TrafficLightStates.RED;
+    private int greenPhaseDuration = 30;
 
     @Override
     public TrafficLightStates getTrafficLightStates() {
@@ -13,11 +14,19 @@ public class GermanStandard implements TrafficLight {
     }
 
     @Override
-    public void setTrafficLightStates(TrafficLightStates state) {
+    public void setTrafficLightState(TrafficLightStates state) {
+        this.state = state;
+        System.out.println(state);
     }
 
     @Override
     public void setGreenPhaseDuration(int duration) {
+        this.greenPhaseDuration = duration;
+    }
+
+    @Override
+    public int getGreenPhaseDuration() {
+        return greenPhaseDuration;
     }
 
     @Override
@@ -27,8 +36,7 @@ public class GermanStandard implements TrafficLight {
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
-        state = TrafficLightStates.RED_YELLOW;
-        TrafficLightStates.RED_YELLOW.printCurrent();
+        setTrafficLightState(TrafficLightStates.RED_YELLOW);
         TimeUnit.SECONDS.sleep(2);
         TrafficLight.super.sequence();
     }

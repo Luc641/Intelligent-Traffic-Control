@@ -5,6 +5,7 @@ import javax.sound.sampled.LineUnavailableException;
 public class DutchStandard implements TrafficLight{
 
     private TrafficLightStates state = TrafficLightStates.RED;
+    int greenPhaseDuration = 30;
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
@@ -17,12 +18,19 @@ public class DutchStandard implements TrafficLight{
     }
 
     @Override
-    public void setTrafficLightStates(TrafficLightStates state) {
-
+    public void setTrafficLightState(TrafficLightStates state) {
+        this.state = state;
+        System.out.println(state);
     }
 
     @Override
     public void setGreenPhaseDuration(int duration) {
+        this.greenPhaseDuration = duration;
+    }
+
+    @Override
+    public int getGreenPhaseDuration() {
+        return greenPhaseDuration;
     }
 
     @Override

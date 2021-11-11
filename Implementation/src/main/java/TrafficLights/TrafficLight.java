@@ -6,25 +6,23 @@ import java.util.concurrent.TimeUnit;
 public interface TrafficLight {
 
     default void sequence() throws InterruptedException, LineUnavailableException {
-    	
-          TrafficLightStates trafficLightStates = TrafficLightStates.GREEN;
-          TrafficLightStates.GREEN.printCurrent();
-          TimeUnit.SECONDS.sleep(45);
-          trafficLightStates = TrafficLightStates.YELLOW;
-          TrafficLightStates.YELLOW.printCurrent();
+          setTrafficLightState(TrafficLightStates.GREEN);
+          TimeUnit.SECONDS.sleep(getGreenPhaseDuration());
+          setTrafficLightState(TrafficLightStates.YELLOW);
           TimeUnit.SECONDS.sleep(3);
-          trafficLightStates = TrafficLightStates.RED;
-          TrafficLightStates.RED.printCurrent();
+          setTrafficLightState(TrafficLightStates.RED);
      }
 
 
     TrafficLightStates getTrafficLightStates();
 
-    void setTrafficLightStates(TrafficLightStates state);
+    void setTrafficLightState(TrafficLightStates state);
 
     void setGreenPhaseDuration(int duration);
 
+    int getGreenPhaseDuration();
+
     default void nightMode() {
-        setTrafficLightStates(TrafficLightStates.YELLOW_BLINKING);
+        setTrafficLightState(TrafficLightStates.YELLOW_BLINKING);
     }
 }
