@@ -1,9 +1,10 @@
 package TrafficLights;
 
 import javax.sound.sampled.LineUnavailableException;
+import java.util.concurrent.TimeUnit;
 
 public class DutchStandard implements TrafficLight{
-    
+    int index;
     TrafficLightStates state = TrafficLightStates.RED;
 
     @Override

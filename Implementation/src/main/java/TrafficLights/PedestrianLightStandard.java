@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PedestrianLightStandard implements TrafficLight {
     TrafficLightStates state = TrafficLightStates.RED;
-    int greenPhaseDuration = 25;
+    int greenPhaseDuration = 5;
 
     @Override
     public void sequence() throws InterruptedException, LineUnavailableException {
@@ -30,6 +30,7 @@ public class PedestrianLightStandard implements TrafficLight {
 
     @Override
     public void setTrafficLightStates(TrafficLightStates state) {
+
     }
 
     @Override
