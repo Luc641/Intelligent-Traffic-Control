@@ -4,6 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="good gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="c0657ca0-5046-45b3-b13c-00d4f7edad4c" name="Changes by jacob" comment=""/>
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
     <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -29,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="20MHEgE43P95nIin3vV5whBf8DG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -98,7 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1635847427244</updated>
       <workItem from="1635934688404" duration="1856000" />
-      <workItem from="1636024269032" duration="10565000" />
+      <workItem from="1636024269032" duration="11447000" />
+      <workItem from="1636618172765" duration="924000" />
+      <workItem from="1636624984024" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="Grammar">
       <created>1635933146433</created>
@@ -156,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636034536892</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changes for Road">
+      <created>1636034974275</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636034974275</updated>
+    </task>
+    <task id="LOCAL-00010" summary="good gitignore">
+      <created>1636035183418</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636035183418</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +203,7 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="changes for the Intersection" />
     <MESSAGE value="changes for Road" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes for Road" />
+    <MESSAGE value="good gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="good gitignore" />
   </component>
 </project>
