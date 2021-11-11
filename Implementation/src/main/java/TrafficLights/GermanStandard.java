@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 public class GermanStandard implements TrafficLight {
 
     public TrafficLightStates state = TrafficLightStates.RED;
-    public final Standards standards = Standards.GERMAN;
 
     @Override
     public TrafficLightStates getTrafficLightStates() {
@@ -15,7 +14,6 @@ public class GermanStandard implements TrafficLight {
 
     @Override
     public void setTrafficLightStates(TrafficLightStates state) {
-
     }
 
     @Override

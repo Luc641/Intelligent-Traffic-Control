@@ -1,8 +1,7 @@
 package TrafficLights;
 
 import javax.sound.sampled.LineUnavailableException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Intersection {
 
