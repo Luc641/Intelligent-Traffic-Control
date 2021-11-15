@@ -10,13 +10,23 @@ public class PedestrianLightStandard implements TrafficLight {
 
     private TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 5;
+    private Thread thread;
+    private String name;
+
+    public PedestrianLightStandard(String name) {
+        this.name = name;
+    }
 
     @Override
-    public void sequence() throws InterruptedException, LineUnavailableException {
-        setTrafficLightState(TrafficLightStates.GREEN);
-        beep(greenPhaseDuration);
-        setTrafficLightState(TrafficLightStates.GREEN_BLINKING);
-        TimeUnit.SECONDS.sleep(2);
+    public void sequence(){
+        try {
+            setTrafficLightState(TrafficLightStates.GREEN);
+            beep(greenPhaseDuration);
+            setTrafficLightState(TrafficLightStates.GREEN_BLINKING);
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
         setTrafficLightState(TrafficLightStates.RED);
     }
 
@@ -39,6 +49,22 @@ public class PedestrianLightStandard implements TrafficLight {
     @Override
     public int getGreenPhaseDuration() {
         return greenPhaseDuration;
+    }
+
+    @Override
+    public void startThread() {
+        setThread(new Thread(this::sequence));
+        thread.start();
+    }
+
+    @Override
+    public void setThread(Thread thread) {
+        this.thread = thread;
+    }
+
+    @Override
+    public Thread getThread() {
+        return thread;
     }
 
     @Override

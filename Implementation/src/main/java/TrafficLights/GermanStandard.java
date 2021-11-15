@@ -7,6 +7,23 @@ public class GermanStandard implements TrafficLight {
 
     private TrafficLightStates state = TrafficLightStates.RED;
     private int greenPhaseDuration = 30;
+    private Thread thread;
+    private String name;
+
+    public GermanStandard(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void sequence(){
+        try {
+            setTrafficLightState(TrafficLightStates.RED_YELLOW);
+            TimeUnit.SECONDS.sleep(2);
+            TrafficLight.super.sequence();
+        } catch (InterruptedException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public TrafficLightStates getTrafficLightState() {
@@ -16,7 +33,7 @@ public class GermanStandard implements TrafficLight {
     @Override
     public void setTrafficLightState(TrafficLightStates state) {
         this.state = state;
-        System.out.println(state);
+        System.out.println(name+": "+state);
     }
 
     @Override
@@ -30,14 +47,19 @@ public class GermanStandard implements TrafficLight {
     }
 
     @Override
-    public void nightMode() {
-        TrafficLight.super.nightMode();
+    public void startThread() {
+        setThread(new Thread(this::sequence));
+        thread.start();
     }
 
     @Override
-    public void sequence() throws InterruptedException, LineUnavailableException {
-        setTrafficLightState(TrafficLightStates.RED_YELLOW);
-        TimeUnit.SECONDS.sleep(2);
-        TrafficLight.super.sequence();
+    public void setThread(Thread thread) {
+        this.thread = thread;
     }
+
+    @Override
+    public Thread getThread() {
+        return thread;
+    }
+
 }
