@@ -27,7 +27,7 @@ public interface Intersection {
         return re;
     }
 
-    default void sequence(String s1, String s2) throws InterruptedException {
+    default void sequence(List<String> trafficLights) throws InterruptedException {
         getTrafficLights().get(s1).startThread();
         getTrafficLights().get(s2).startThread();
         getTrafficLights().get(s1).waitUntilFinished();
@@ -35,7 +35,7 @@ public interface Intersection {
         Thread.sleep(2000);
     }
 
-    default void start() throws InterruptedException{
+    default void start(HashMap<Integer,List<String>>) throws InterruptedException{
         if (check("n")&&check("n")){
             sequence("e","w");
         }if (check("e")&&check("w")) {
