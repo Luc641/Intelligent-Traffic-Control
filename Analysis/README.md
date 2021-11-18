@@ -29,7 +29,9 @@
 | Result: | Traffic light switches states|
 | Extensions: | 2.1 System applies nation standard (GER standard RED to RED/YELLOW to GREEN)<br> 4.1 System applies nation standard (GER/NL standard:GREEN to YELLOW to RED)<br>
 | Exceptions: | - |
+
 <br>
+
 | Name: | Pedestrian Light switch |
 |-|-|
 | Actor: | Pedestrian Control Light|
