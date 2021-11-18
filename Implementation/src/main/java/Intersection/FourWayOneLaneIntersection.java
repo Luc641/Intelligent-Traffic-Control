@@ -17,6 +17,13 @@ public class FourWayOneLaneIntersection implements Intersection {
         setGreenPhaseDuration(duration);
     }
 
+    public FourWayOneLaneIntersection(TrafficLightFactory type) {
+        trafficLights.put("n",type.getTrafficLight("n"));
+        trafficLights.put("e",type.getTrafficLight("e"));
+        trafficLights.put("s",type.getTrafficLight("s"));
+        trafficLights.put("w",type.getTrafficLight("w"));
+    }
+
     @Override
     public HashMap<String, TrafficLight> getTrafficLights() {
         return trafficLights;
