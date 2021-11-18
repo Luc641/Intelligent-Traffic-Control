@@ -4,6 +4,7 @@ import TrafficLights.TrafficLight;
 import TrafficLights.TrafficLightStates;
 
 import java.util.HashMap;
+import java.util.List;
 
 public interface Intersection {
 
@@ -13,9 +14,17 @@ public interface Intersection {
         getTrafficLights().forEach((k,v) -> v.setGreenPhaseDuration(duration));
     };
 
-    default boolean check(String s1, String s2){
-        return getTrafficLights().get(s1).getTrafficLightState()== TrafficLightStates.RED
-                && getTrafficLights().get(s2).getTrafficLightState()==TrafficLightStates.RED;
+    default boolean check(List<String> trafficLights){
+        boolean re = false;
+        for(String s: trafficLights){
+            if(getTrafficLights().get(s).getTrafficLightState()==TrafficLightStates.RED){
+                re = true;
+            }
+            else {
+                return false;
+            }
+        }
+        return re;
     }
 
     default void sequence(String s1, String s2) throws InterruptedException {
@@ -27,9 +36,9 @@ public interface Intersection {
     }
 
     default void start() throws InterruptedException{
-        if (check("n","s")){
+        if (check("n")&&check("n")){
             sequence("e","w");
-        }if (check("e","w")) {
+        }if (check("e")&&check("w")) {
             sequence("n","s");
         }
         start();
