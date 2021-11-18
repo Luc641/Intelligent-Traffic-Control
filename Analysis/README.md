@@ -42,5 +42,5 @@
 | Extensions: | 4.1 The system changes the state to GREEN BLINKING.<br> 4.2 The system changes the state to RED. |
 | Exceptions: | - |
 
-## Use Case Diagram
+<h1>Use Case Diagram</h1>
 <img src = https://github.com/FontysVenlo/intelligent-traffic-control-prj3-g13-itc/blob/main/Analysis/UseCaseDiagram/PRJ3-UseCaseDiagram-TCL.svg>
