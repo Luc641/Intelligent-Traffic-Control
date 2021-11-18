@@ -1,23 +1,24 @@
-
 # Analysis ITC
 
-## User Stories
 
-<h1>Pedestrian Light User</h1>
+
+<h1>User Stories</h1>
+
+## Pedestrian Light User
 
 <b><i>As a pedestrian light I want to:</i></b>
 
 * Switch signals from red to green and back to red as default behavior, to help pedestrians safely cross the street.
 * Switching signals can be extended to red to green to green-blinking and back to red.
 
-<h1>Traffic Light User</h1>
+## Traffic Light User
 
 <b><i>As a traffic light I want to:</i></b>
 
 * Switch signals from red to green and back to red as default behavior, in order to regulate traffic.
 * Switching Signals according to specific nation standards (for ex.: German standard: Red->Red/Yellow->Green->Yellow->Red)
 
-## Use Case Description
+<h1>Use Case Description</h1>
 
 | Name: | Traffic Control Light|
 |-|-|
@@ -28,8 +29,7 @@
 | Result: | Traffic light switches states|
 | Extensions: | 2.1 System applies nation standard (GER standard RED to RED/YELLOW to GREEN)<br> 4.1 System applies nation standard (GER/NL standard:GREEN to YELLOW to RED)<br>
 | Exceptions: | - |
-
-<br><br>
+<br>
 | Name: | Pedestrian Light switch |
 |-|-|
 | Actor: | Pedestrian Control Light|
@@ -39,7 +39,6 @@
 | Result: | A sequence has been completed |
 | Extensions: | 4.1 The system changes the state to GREEN BLINKING.<br> 4.2 The system changes the state to RED. |
 | Exceptions: | - |
-
 
 ## Use Case Diagram
 <img src = https://github.com/FontysVenlo/intelligent-traffic-control-prj3-g13-itc/blob/main/Analysis/UseCaseDiagram/PRJ3-UseCaseDiagram-TCL.svg>
