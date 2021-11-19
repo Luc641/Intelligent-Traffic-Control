@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="g13.mavenproject1.PrimaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="g13.mavenproject1.PrimaryController">
     <children>
         <GridPane disable="true" gridLinesVisible="false" layoutX="14.0" layoutY="36.0" prefHeight="950.0" prefWidth="980.0" style="-fx-grid-lines-visible: false;">
             <columnConstraints>
@@ -439,9 +439,9 @@
                     <children>
                         <VBox id="germanTl" fx:id="tl1" fillWidth="false" layoutX="28.0" layoutY="-10.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 90;">
                             <children>
-                                <Circle fx:id="circleGreenTL1e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleOrangeTL1e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                                 <Circle fx:id="circleRedTL1e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleOrangeTL1e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleGreenTL1e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                     </children>
@@ -450,9 +450,9 @@
                     <children>
                         <VBox id="germanTl" fx:id="tl4" fillWidth="false" layoutX="10.0" layoutY="-31.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px;">
                             <children>
-                                <Circle fx:id="circleGreenTL4e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleOrangeTL4e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                                 <Circle fx:id="circleRedTL4e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleOrangeTL4e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleGreenTL4e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                     </children>
@@ -461,9 +461,9 @@
                     <children>
                         <VBox id="germanTl" fx:id="tl3" fillWidth="false" layoutX="-4.0" layoutY="-7.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 270;">
                             <children>
-                                <Circle fx:id="circleGreenTL3e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleOrangeTL3e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                                 <Circle fx:id="circleRedTL3e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleOrangeTL3e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleGreenTL3e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                     </children>
@@ -472,9 +472,9 @@
                     <children>
                         <VBox id="germanTl" fx:id="tl2" fillWidth="false" layoutX="10.0" layoutY="12.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 180;">
                             <children>
-                                <Circle fx:id="circleGreenTL2e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleOrangeTL2e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                                 <Circle fx:id="circleRedTL2e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleOrangeTL2e" fill="#ffbc21" layoutX="43.0" layoutY="43.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="circleGreenTL2e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                     </children>
