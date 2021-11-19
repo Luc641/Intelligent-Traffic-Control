@@ -1,4 +1,4 @@
-<h1>User Stories</h1>
+<h1>Use Cases / User Stories</h1>
 
 ## Pedestrian Light User
 
