@@ -1,10 +1,15 @@
-# Use Cases ITC
+<h1>Use Cases / User Stories</h1>
 
 ## Pedestrian Light User
-Wants to be able to switch from RED to GREEN to RED as a default behavior and can be extended <br>
-->(RED to GREEN-to-GREEN BLINKING to RED) <br>
+
+<b><i>As a pedestrian light I want to:</i></b>
+
+* Switch signals from red to green and back to red as default behavior, to help pedestrians safely cross the street.
+* Switching signals can be extended to red to green to green-blinking and back to red.
 
 ## Traffic Light User
-Wants to change from RED to GREEN and from GREEN to RED with the specific nation standards included <br>
--> (German standard: RED to RED/YELLOW to GREEN to YELLOW to RED additional arrows for the control light) <br>
--> (Dutch standard: RED to GREEN to YELLOW to RED)
+
+<b><i>As a traffic light I want to:</i></b>
+
+* Switch signals from red to green and back to red as default behavior, in order to regulate traffic.
+* Switching Signals can be extended according to specific nation standards (for ex.: German standard: Red->Red/Yellow->Green->Yellow->Red)
