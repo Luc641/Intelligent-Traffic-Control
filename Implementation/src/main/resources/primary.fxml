@@ -20,10 +20,10 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.59995117187498" minWidth="50.0" prefWidth="54.59995117187498" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.20004882812498" minWidth="44.20004882812498" prefWidth="56.20004882812498" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.79997558593749" minWidth="47.400000000000034" prefWidth="56.79997558593749" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.39999999999998" minWidth="50.0" prefWidth="58.4000244140625" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
@@ -54,8 +54,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p6" layoutX="12.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 90;">
                             <children>
-                                <Circle fx:id="circleGreenP5e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP5e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenS2" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedS2" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -204,8 +204,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p1" layoutX="10.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 180;">
                             <children>
-                                <Circle fx:id="circleGreenP1e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP1e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenW2" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedW2" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -314,8 +314,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p9" layoutX="10.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 0;">
                             <children>
-                                <Circle fx:id="circleGreenP8e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP8e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenE2" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedE2" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -338,8 +338,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p5" layoutX="8.0" layoutY="1.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 270;">
                             <children>
-                                <Circle fx:id="circleGreenP4e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP4e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenN2" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedN2" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children>
@@ -371,8 +371,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p2" layoutX="59.0" layoutY="1.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 0;">
                             <children>
-                                <Circle fx:id="circleGreenP2e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP2e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenW1" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedW1" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -384,8 +384,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p4" layoutX="12.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 90;">
                             <children>
-                                <Circle fx:id="circleGreenP3e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP3e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenN1" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedN1" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -393,8 +393,8 @@
                <children>
                         <VBox id="pedLt" fx:id="p8" layoutX="7.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 180;">
                             <children>
-                                <Circle fx:id="circleGreenP7e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP7e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenE1" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedE1" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
@@ -402,10 +402,10 @@
                 <Pane layoutX="410.0" layoutY="560.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: grey;" GridPane.columnIndex="15" GridPane.rowIndex="8" />
                 <Pane layoutX="360.0" layoutY="760.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: grey;" GridPane.columnIndex="9" GridPane.rowIndex="15">
                <children>
-                        <VBox id="pedLt" fx:id="p7" layoutX="14.0" layoutY="1.0" prefHeight="60.0" prefWidth="36.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 270;">
+                        <VBox id="pedLt" fx:id="p7" layoutX="9.0" layoutY="2.0" prefHeight="44.0" prefWidth="37.0" style="-fx-background-color: black; -fx-border-radius: 25px; -fx-background-radius: 25px; -fx-padding: 10px; -fx-spacing: 5px; -fx-rotate: 270;">
                             <children>
-                                <Circle fx:id="circleGreenP6e" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-                                <Circle fx:id="circleRedP6e" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianGreenS1" fill="#1fff25" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                                <Circle fx:id="pedestrianRedS1" fill="#ff2121" layoutX="43.0" layoutY="79.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                             </children>
                         </VBox>
                </children></Pane>
