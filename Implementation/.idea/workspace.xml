@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b908c36f-92f1-4ff1-a68d-c1fa294e4f2c" name="Default Changelist" comment="sequence method delegateable">
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/DutchStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/GermanStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Intersection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/PedestrianLightStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrafficLights/Road.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/primary.fxml" afterDir="false" />
     </list>
     <list id="c0657ca0-5046-45b3-b13c-00d4f7edad4c" name="Changes by jacob" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -59,7 +56,7 @@
       <recent name="Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Beep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TrafficLights.Beep" />
       <module name="Implementation" />
@@ -69,6 +66,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Implementation" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Beep" />
       </list>
@@ -101,6 +106,12 @@
       <workItem from="1636024269032" duration="11447000" />
       <workItem from="1636618172765" duration="924000" />
       <workItem from="1636624984024" duration="557000" />
+      <workItem from="1637224613110" duration="15000" />
+      <workItem from="1637225487135" duration="7000" />
+      <workItem from="1637229918537" duration="3485000" />
+      <workItem from="1637311966226" duration="17000" />
+      <workItem from="1637312011951" duration="2204000" />
+      <workItem from="1637314748462" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Grammar">
       <created>1635933146433</created>
