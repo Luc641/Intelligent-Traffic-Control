@@ -6,40 +6,49 @@ import TrafficLights.TrafficLightStates;
 import java.util.HashMap;
 import java.util.List;
 
+
 public interface Intersection {
 
     HashMap<String, TrafficLight> getTrafficLights();
+
+    HashMap<Integer,List<String>> getSequence();
 
     default void setGreenPhaseDuration(int duration){
         getTrafficLights().forEach((k,v) -> v.setGreenPhaseDuration(duration));
     };
 
-    default boolean check(List<String> trafficLights){
-        boolean re = false;
-        for(String s: trafficLights){
+    default boolean check(List<String> set){
+        boolean isRed = false;
+        for(String s: set){
             if(getTrafficLights().get(s).getTrafficLightState()==TrafficLightStates.RED){
-                re = true;
+                isRed = true;
             }
             else {
                 return false;
             }
         }
-        return re;
+        return isRed;
     }
 
-    default void sequence(List<String> trafficLights) throws InterruptedException {
-        getTrafficLights().get(s1).startThread();
-        getTrafficLights().get(s2).startThread();
-        getTrafficLights().get(s1).waitUntilFinished();
-        getTrafficLights().get(s2).waitUntilFinished();
+    default void sequence(List<String> set) throws InterruptedException {
+        for(String s: set){
+            getTrafficLights().get(s).startThread();
+        }
+        for(String s: set){
+            getTrafficLights().get(s).waitUntilFinished();
+        }
         Thread.sleep(2000);
     }
 
-    default void start(HashMap<Integer,List<String>>) throws InterruptedException{
-        if (check("n")&&check("n")){
-            sequence("e","w");
-        }if (check("e")&&check("w")) {
-            sequence("n","s");
+    default void start() throws InterruptedException{
+        for(int i = 1; getSequence().size() >= i; i++) {
+            if (check(getSequence().get(i))){
+                if (i>=getSequence().size()){
+                    sequence(getSequence().get(1));
+                }else{
+                    sequence(getSequence().get(i+1));
+                }
+            }
         }
         start();
     };

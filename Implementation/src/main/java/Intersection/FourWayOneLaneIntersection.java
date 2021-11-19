@@ -37,4 +37,9 @@ public class FourWayOneLaneIntersection implements Intersection {
     public HashMap<String, TrafficLight> getTrafficLights() {
         return trafficLights;
     }
+
+    @Override
+    public HashMap<Integer, List<String>> getSequence() {
+        return sequence;
+    }
 }
