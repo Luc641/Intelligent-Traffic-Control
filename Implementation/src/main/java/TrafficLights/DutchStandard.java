@@ -1,5 +1,7 @@
 package TrafficLights;
 
+import javafx.beans.InvalidationListener;
+
 import javax.sound.sampled.LineUnavailableException;
 
 public class DutchStandard implements TrafficLight{
@@ -61,4 +63,13 @@ public class DutchStandard implements TrafficLight{
     }
 
 
+    @Override
+    public void addListener(InvalidationListener invalidationListener) {
+
+    }
+
+    @Override
+    public void removeListener(InvalidationListener invalidationListener) {
+
+    }
 }

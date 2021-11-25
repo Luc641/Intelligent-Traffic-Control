@@ -1,9 +1,11 @@
 package TrafficLights;
 
+import javafx.beans.Observable;
+
 import javax.sound.sampled.LineUnavailableException;
 import java.util.concurrent.TimeUnit;
 
-public interface TrafficLight{
+public interface TrafficLight extends Observable {
 
     default void sequence() throws InterruptedException, LineUnavailableException {
         setTrafficLightState(TrafficLightStates.GREEN);
@@ -34,4 +36,6 @@ public interface TrafficLight{
     default void nightMode() {
         setTrafficLightState(TrafficLightStates.YELLOW_BLINKING);
     }
+
+
 }

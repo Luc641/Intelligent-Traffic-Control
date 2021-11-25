@@ -1,5 +1,7 @@
 package TrafficLights;
 
+import javafx.beans.InvalidationListener;
+
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
@@ -9,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class PedestrianLightStandard implements TrafficLight {
 
     private TrafficLightStates state = TrafficLightStates.RED;
-    private int greenPhaseDuration = 5;
+    private int greenPhaseDuration = 10;
     private Thread thread;
     private String name;
 
@@ -38,7 +40,7 @@ public class PedestrianLightStandard implements TrafficLight {
     @Override
     public void setTrafficLightState(TrafficLightStates state) {
         this.state = state;
-        System.out.println(state);
+        System.out.println(name+": "+state);
     }
 
     @Override
@@ -100,5 +102,15 @@ public class PedestrianLightStandard implements TrafficLight {
         sdl.drain();
         sdl.stop();
         Thread.sleep(250);
+    }
+
+    @Override
+    public void addListener(InvalidationListener invalidationListener) {
+
+    }
+
+    @Override
+    public void removeListener(InvalidationListener invalidationListener) {
+
     }
 }

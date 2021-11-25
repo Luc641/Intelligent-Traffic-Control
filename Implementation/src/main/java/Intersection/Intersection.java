@@ -5,16 +5,21 @@ import TrafficLights.TrafficLightStates;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Observer;
 
 
-public interface Intersection {
+public interface Intersection extends Observer {
 
     HashMap<String, TrafficLight> getTrafficLights();
 
     HashMap<Integer,List<String>> getSequence();
 
     default void setGreenPhaseDuration(int duration){
-        getTrafficLights().forEach((k,v) -> v.setGreenPhaseDuration(duration));
+        getTrafficLights().forEach((k,v)-> {
+            if (!k.contains("Ped")) {
+                v.setGreenPhaseDuration(duration);
+            }
+        });
     };
 
     default boolean check(List<String> set){
@@ -53,4 +58,9 @@ public interface Intersection {
         start();
     };
 
+    public void startThread();
+
+    default void pedThread(){
+
+    }
 }

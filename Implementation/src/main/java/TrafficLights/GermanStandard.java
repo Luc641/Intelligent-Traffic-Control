@@ -1,5 +1,8 @@
 package TrafficLights;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+
 import javax.sound.sampled.LineUnavailableException;
 import java.util.concurrent.TimeUnit;
 
@@ -62,4 +65,13 @@ public class GermanStandard implements TrafficLight {
         return thread;
     }
 
+    @Override
+    public void addListener(InvalidationListener invalidationListener) {
+
+    }
+
+    @Override
+    public void removeListener(InvalidationListener invalidationListener) {
+
+    }
 }
