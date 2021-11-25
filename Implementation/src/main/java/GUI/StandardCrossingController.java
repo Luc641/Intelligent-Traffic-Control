@@ -6,10 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 
-public class PrimaryController {
+public class StandardCrossingController {
 
-    @FXML
-    private VBox p6;
+
 
     @FXML
     private Circle pedestrianGreenS2;
@@ -18,16 +17,10 @@ public class PrimaryController {
     private Circle pedestrianRedS2;
 
     @FXML
-    private VBox p1;
-
-    @FXML
     private Circle pedestrianGreenW2;
 
     @FXML
     private Circle pedestrianRedW2;
-
-    @FXML
-    private VBox p9;
 
     @FXML
     private Circle pedestrianGreenE2;
@@ -36,16 +29,10 @@ public class PrimaryController {
     private Circle pedestrianRedE2;
 
     @FXML
-    private VBox p5;
-
-    @FXML
     private Circle pedestrianGreenN2;
 
     @FXML
     private Circle pedestrianRedN2;
-
-    @FXML
-    private VBox p2;
 
     @FXML
     private Circle pedestrianGreenW1;
@@ -54,16 +41,10 @@ public class PrimaryController {
     private Circle pedestrianRedW1;
 
     @FXML
-    private VBox p4;
-
-    @FXML
     private Circle pedestrianGreenN1;
 
     @FXML
     private Circle pedestrianRedN1;
-
-    @FXML
-    private VBox p8;
 
     @FXML
     private Circle pedestrianGreenE1;
@@ -72,16 +53,10 @@ public class PrimaryController {
     private Circle pedestrianRedE1;
 
     @FXML
-    private VBox p7;
-
-    @FXML
     private Circle pedestrianGreenS1;
 
     @FXML
     private Circle pedestrianRedS1;
-
-    @FXML
-    private VBox tl1;
 
     @FXML
     private Circle trafficRedWest;
@@ -93,9 +68,6 @@ public class PrimaryController {
     private Circle trafficGreenWest;
 
     @FXML
-    private VBox tl4;
-
-    @FXML
     private Circle trafficRedSouth;
 
     @FXML
@@ -103,9 +75,6 @@ public class PrimaryController {
 
     @FXML
     private Circle trafficGreenSouth;
-
-    @FXML
-    private VBox tl3;
 
     @FXML
     private Circle trafficRedEast;
@@ -117,9 +86,6 @@ public class PrimaryController {
     private Circle trafficGreenEast;
 
     @FXML
-    private VBox tl2;
-
-    @FXML
     private Circle trafficRedNorth;
 
     @FXML
@@ -129,7 +95,7 @@ public class PrimaryController {
     private Circle trafficGreenNorth;
 
     @FXML
-    private Button butters;
+    private Button button;
 
     @FXML
     void switchToSecondary(ActionEvent event) {
