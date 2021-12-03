@@ -23,7 +23,7 @@ public abstract class AbstractTrafficLight implements Context {
     }
 
     public void showCurrentSignal() {
-        System.out.println("Running in thread " + Thread.currentThread() + ": " + name + ": " + currentState);
+        System.out.println( name + " Traffic Light: " + currentState);
         currentState.showSignalOnce(this);
     }
 

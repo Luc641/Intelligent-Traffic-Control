@@ -27,11 +27,6 @@ public class Road {
         support.addPropertyChangeListener(pedestrianLight);
     }
 
-    @Override
-    public String toString() {
-        return "Road " + name;
-    }
-
     private State getTrafficLightState() {
         assert trafficLightLeft.getCurrentState() == trafficLightRight.getCurrentState();
         return trafficLightLeft.getCurrentState();
@@ -59,4 +54,5 @@ public class Road {
             System.out.println(pedestrianLight.getCurrentState());
         }
     }
+
 }
