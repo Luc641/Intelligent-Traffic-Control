@@ -1,10 +1,17 @@
-import TrafficLights.*;
-import Intersection.*;
+import Intersection.Intersection;
+import TrafficLights.GermanStandard;
+import TrafficLights.TrafficLightFactory;
+import TrafficLights.TrafficLightStateGerman;
+
 import javax.sound.sampled.LineUnavailableException;
 
 public class Main {
-    public static void main(String[] args) throws LineUnavailableException, InterruptedException {
-        Intersection test = IntersectionFactory.FourWayOneLane.getIntersection(TrafficLightFactory.GERMAN,2);
-        test.start();
+    public static void main(String[] args) throws InterruptedException, LineUnavailableException {
+        GermanStandard germanStandard = new GermanStandard("German");
+        var intersection = new Intersection(TrafficLightFactory.GERMAN);
+
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            intersection.sequence();
+        }
     }
 }

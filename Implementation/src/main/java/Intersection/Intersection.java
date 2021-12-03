@@ -1,66 +1,44 @@
 package Intersection;
 
-import TrafficLights.TrafficLight;
-import TrafficLights.TrafficLightStates;
+import TrafficLights.PedestrianLightStandard;
+import TrafficLights.TrafficLightFactory;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Observer;
+import javax.sound.sampled.LineUnavailableException;
+import java.beans.PropertyChangeSupport;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
 
 
-public interface Intersection extends Observer {
+public class Intersection {
 
-    HashMap<String, TrafficLight> getTrafficLights();
+    private PropertyChangeSupport support;
+    private final ForkJoinPool forkJoinPool = new ForkJoinPool(2);
+    Road horizontal;
+    Road vertical;
 
-    HashMap<Integer,List<String>> getSequence();
 
-    default void setGreenPhaseDuration(int duration){
-        getTrafficLights().forEach((k,v)-> {
-            if (!k.contains("Ped")) {
-                v.setGreenPhaseDuration(duration);
-            }
-        });
-    };
+    public Intersection(TrafficLightFactory trafficLightFactory) {
+        // Create traffic lights for the horizontal road.
+        var first = trafficLightFactory.getTrafficLight("First");
+        var second = trafficLightFactory.getTrafficLight("Second");
+        var pedFirst = new PedestrianLightStandard("Horizontal Ped");
 
-    default boolean check(List<String> set){
-        boolean isRed = false;
-        for(String s: set){
-            if(getTrafficLights().get(s).getTrafficLightState()==TrafficLightStates.RED){
-                isRed = true;
-            }
-            else {
-                return false;
-            }
-        }
-        return isRed;
+        // Create traffic lights for the vertical road.
+        var inverse = first.getCurrentState().inverse();
+        var third = trafficLightFactory.getTrafficLight("Third", inverse);
+        var fourth = trafficLightFactory.getTrafficLight("Fourth", inverse);
+        var pedSecond = new PedestrianLightStandard("Vertical Ped");
+
+        horizontal = new Road("Horizontal", first, second, pedFirst);
+        vertical = new Road("Vertical", third, fourth, pedSecond);
     }
 
-    default void sequence(List<String> set) throws InterruptedException {
-        for(String s: set){
-            getTrafficLights().get(s).startThread();
-        }
-        for(String s: set){
-            getTrafficLights().get(s).waitUntilFinished();
-        }
-        Thread.sleep(2000);
-    }
 
-    default void start() throws InterruptedException{
-        for(int i = 1; getSequence().size() >= i; i++) {
-            if (check(getSequence().get(i))){
-                if (i>=getSequence().size()){
-                    sequence(getSequence().get(1));
-                }else{
-                    sequence(getSequence().get(i+1));
-                }
-            }
-        }
-        start();
-    };
-
-    public void startThread();
-
-    default void pedThread(){
-
+    public void sequence() throws LineUnavailableException, InterruptedException {
+        forkJoinPool.submit(horizontal::advanceOnce);
+        forkJoinPool.submit(vertical::advanceOnce);
+        //noinspection ResultOfMethodCallIgnored
+        forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
+        System.out.println("--------");
     }
 }

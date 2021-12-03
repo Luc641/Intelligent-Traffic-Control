@@ -1,78 +1,32 @@
 package TrafficLights;
 
-import javafx.beans.InvalidationListener;
-
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
-import java.util.concurrent.TimeUnit;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
-public class PedestrianLightStandard implements TrafficLight {
 
-    private TrafficLightStates state = TrafficLightStates.RED;
-    private int greenPhaseDuration = 10;
-    private Thread thread;
-    private String name;
+public class PedestrianLightStandard extends AbstractTrafficLight implements PropertyChangeListener {
 
     public PedestrianLightStandard(String name) {
-        this.name = name;
+        // hier muesste ein initial state + name fuer pedestrians rein.
+        super(name, TrafficLightStateGerman.GREEN);
     }
 
-    @Override
-    public void sequence(){
-        try {
-            setTrafficLightState(TrafficLightStates.GREEN);
-            beep(greenPhaseDuration);
-            setTrafficLightState(TrafficLightStates.GREEN_BLINKING);
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException | LineUnavailableException e) {
-            e.printStackTrace();
-        }
-        setTrafficLightState(TrafficLightStates.RED);
-    }
+
+//    @Override
+//    public void nightMode() {
+//        setTrafficLightState(TrafficLightStates.OFF);
+//    }
 
     @Override
-    public TrafficLightStates getTrafficLightState() {
-        return state;
+    public void propertyChange(PropertyChangeEvent evt) {
+        // am besten function schreiben, die country enums auf deinen pedestrian enum mappt.
+        changeState((State) evt.getOldValue());
     }
 
-    @Override
-    public void setTrafficLightState(TrafficLightStates state) {
-        this.state = state;
-        System.out.println(name+": "+state);
-    }
-
-    @Override
-    public void setGreenPhaseDuration(int duration) {
-        this.greenPhaseDuration = duration;
-    }
-
-    @Override
-    public int getGreenPhaseDuration() {
-        return greenPhaseDuration;
-    }
-
-    @Override
-    public void startThread() {
-        setThread(new Thread(this::sequence));
-        thread.start();
-    }
-
-    @Override
-    public void setThread(Thread thread) {
-        this.thread = thread;
-    }
-
-    @Override
-    public Thread getThread() {
-        return thread;
-    }
-
-    @Override
-    public void nightMode() {
-        setTrafficLightState(TrafficLightStates.OFF);
-    }
 
     public void beep(int duration) throws LineUnavailableException, InterruptedException {
         byte[] buf = new byte[1];
@@ -104,13 +58,4 @@ public class PedestrianLightStandard implements TrafficLight {
         Thread.sleep(250);
     }
 
-    @Override
-    public void addListener(InvalidationListener invalidationListener) {
-
-    }
-
-    @Override
-    public void removeListener(InvalidationListener invalidationListener) {
-
-    }
 }

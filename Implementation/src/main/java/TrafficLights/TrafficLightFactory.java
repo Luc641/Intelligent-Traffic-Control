@@ -2,35 +2,63 @@ package TrafficLights;
 
 public enum TrafficLightFactory {
 
-    GERMAN{
+    GERMAN {
         @Override
-        public TrafficLight getTrafficLight(String name) {
+        public AbstractTrafficLight getTrafficLight(String name) {
             return new GermanStandard(name);
         }
-    },
-    DUTCH{
-        @Override
-        public TrafficLight getTrafficLight(String name) {
-            return new DutchStandard(name);
-        }
-    },
-    PEDESTRIAN{
-        @Override
-        public TrafficLight getTrafficLight(String name) {
-            return new PedestrianLightStandard(name);
-        }
-    },
-    GERMAN_ARROW_LEFT{
-        @Override
-        public TrafficLight getTrafficLight(String name) {
-            return new GermanStandard(name);
-        }
-    },
-    GERMAN_ARROW_RIGHT{
-        @Override
-        public TrafficLight getTrafficLight(String name) { return new GermanStandard(name); }
-    };
 
-    public abstract TrafficLight getTrafficLight(String name);
+        @Override
+        public AbstractTrafficLight getTrafficLight(String name, State initialState) {
+            return new GermanStandard(name, initialState);
+        }
+
+
+    },
+//    DUTCH {
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLight(String name) {
+//            return new DutchStandard(name);
+//        }
+//
+//    },
+//    PEDESTRIAN {
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLight(String name) {
+//            return new PedestrianLightStandard(name);
+//        }
+//
+//    };
+//
+//    GERMAN_ARROW_LEFT {
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLight (String name){
+//            return new GermanStandard(name);
+//        }
+//
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLightWithState (String name, AbstractTrafficLightStates state){
+//            return null;
+//        }
+//    },
+//
+//    GERMAN_ARROW_RIGHT {
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLight (String name){
+//            return new GermanStandard(name);
+//        }
+//
+//        @Override
+//        public AbstractTrafficLight getAbstractTrafficLightWithState (String name, AbstractTrafficLightStates state){
+//            return null;
+//        }
+//    }
+
+    ;
+
+    public abstract AbstractTrafficLight getTrafficLight(String name);
+
+    public abstract AbstractTrafficLight getTrafficLight(String name, State initialState);
+
 
 }

@@ -1,41 +1,56 @@
-package TrafficLights;
-
-import javafx.beans.Observable;
-
-import javax.sound.sampled.LineUnavailableException;
-import java.util.concurrent.TimeUnit;
-
-public interface TrafficLight extends Observable {
-
-    default void sequence() throws InterruptedException, LineUnavailableException {
-        setTrafficLightState(TrafficLightStates.GREEN);
-        TimeUnit.SECONDS.sleep(getGreenPhaseDuration());
-        setTrafficLightState(TrafficLightStates.YELLOW);
-        TimeUnit.SECONDS.sleep(3);
-        setTrafficLightState(TrafficLightStates.RED);
-    }
-
-    TrafficLightStates getTrafficLightState();
-
-    void setTrafficLightState(TrafficLightStates state);
-
-    void setGreenPhaseDuration(int duration);
-
-    int getGreenPhaseDuration();
-
-    void startThread();
-
-    void setThread(Thread thread);
-
-    default void waitUntilFinished() throws InterruptedException {
-        getThread().join();
-    }
-
-    Thread getThread();
-
-    default void nightMode() {
-        setTrafficLightState(TrafficLightStates.YELLOW_BLINKING);
-    }
-
-
-}
+//package TrafficLights;
+//
+//import javafx.beans.Observable;
+//
+//import javax.sound.sampled.LineUnavailableException;
+//import java.beans.PropertyChangeListener;
+//import java.beans.PropertyChangeSupport;
+//import java.util.concurrent.TimeUnit;
+//
+//public abstract class TrafficLight extends TrafficLightImpl {
+//
+//    private final PropertyChangeSupport support;
+//    private final TrafficLightStates currentState;
+//
+//
+//    public void sequence() throws InterruptedException {
+//        var client = new TrafficLightImpl();
+//
+//        while (true) {
+//            client.showCurrentSignal();
+//            TimeUnit.SECONDS.sleep(4);
+//        }
+//    }
+//
+//
+//    public TrafficLight() {
+//        this.support = new PropertyChangeSupport(this);
+//        this.currentState = TrafficLightStates.GREEN;
+//    }
+//
+//    public void showCurrentSignal() {
+//        currentState.showSignalOnce((Context) this);
+//    }
+//
+//
+////    void nightMode() {
+////        setTrafficLightState(TrafficLightStates.YELLOW);
+////    }
+//
+//
+//    //Observer
+//    public PropertyChangeSupport getSupport() {
+//        return support;
+//    }
+//
+//    public void addPropertyChangeListener(PropertyChangeListener propertyChangeListener) {
+//        support.addPropertyChangeListener(propertyChangeListener);
+//    }
+//
+//    //Threads
+//    abstract void startThread();
+//
+//    abstract void setThread(Thread thread);
+//
+//    abstract Thread getThread();
+//}
