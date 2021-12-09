@@ -1,7 +1,6 @@
 import Intersection.Intersection;
 import TrafficLights.GermanStandard;
 import TrafficLights.TrafficLightFactory;
-import TrafficLights.TrafficLightStateGerman;
 
 import javax.sound.sampled.LineUnavailableException;
 

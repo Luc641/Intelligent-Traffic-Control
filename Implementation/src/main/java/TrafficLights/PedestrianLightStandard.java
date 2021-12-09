@@ -12,7 +12,7 @@ public class PedestrianLightStandard extends AbstractTrafficLight implements Pro
 
     public PedestrianLightStandard(String name) {
         // hier muesste ein initial state + name fuer pedestrians rein.
-        super(name, TrafficLightStateGerman.GREEN);
+        super(name, TrafficLightStatesGerman.GREEN);
     }
 
 

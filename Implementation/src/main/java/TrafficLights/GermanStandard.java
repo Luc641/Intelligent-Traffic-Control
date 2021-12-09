@@ -2,7 +2,7 @@ package TrafficLights;
 
 public class GermanStandard extends AbstractTrafficLight {
 
-    private TrafficLightStateGerman state;
+    private TrafficLightStatesGerman state;
     private final int greenPhaseDuration = 5;
 
 
@@ -11,6 +11,6 @@ public class GermanStandard extends AbstractTrafficLight {
     }
 
     public GermanStandard(String name) {
-        this(name, TrafficLightStateGerman.GREEN);
+        this(name, TrafficLightStatesGerman.GREEN);
     }
 }

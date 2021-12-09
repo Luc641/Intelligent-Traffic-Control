@@ -1,7 +1,7 @@
 package TrafficLights;
 
 
-public enum TrafficLightStateGerman implements State {
+public enum TrafficLightStatesGerman implements State {
     RED {
         @Override
         public void showSignalOnce(Context context) {
