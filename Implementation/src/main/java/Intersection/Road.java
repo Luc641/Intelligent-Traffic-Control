@@ -32,11 +32,11 @@ public class Road {
         return trafficLightLeft.getCurrentState();
     }
 
-    private Runnable wrapWithSleep(Runnable toWrap, int value, TimeUnit unit) {
+    private Runnable wrapWithSleep(Runnable toWrap, TimeUnit unit) {
         return () -> {
             toWrap.run();
             try {
-                unit.sleep(value);
+                unit.sleep(5);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -45,8 +45,8 @@ public class Road {
 
     void advanceOnce() {
         var old = getTrafficLightState();
-        forkJoinPool.submit(wrapWithSleep(trafficLightRight::showCurrentSignal, 3, TimeUnit.SECONDS));
-        forkJoinPool.submit(wrapWithSleep(trafficLightLeft::showCurrentSignal, 3, TimeUnit.SECONDS));
+        forkJoinPool.submit(wrapWithSleep(trafficLightRight::showCurrentSignal, TimeUnit.SECONDS));
+        forkJoinPool.submit(wrapWithSleep(trafficLightLeft::showCurrentSignal, TimeUnit.SECONDS));
         //noinspection ResultOfMethodCallIgnored
         forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
         if (getTrafficLightState().toString().contains("RED")) {
