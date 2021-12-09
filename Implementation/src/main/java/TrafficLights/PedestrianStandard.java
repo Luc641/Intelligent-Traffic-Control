@@ -8,11 +8,14 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 
-public class PedestrianLightStandard extends AbstractTrafficLight implements PropertyChangeListener {
+public class PedestrianStandard extends AbstractTrafficLight implements PropertyChangeListener {
 
-    public PedestrianLightStandard(String name) {
-        // hier muesste ein initial state + name fuer pedestrians rein.
-        super(name, TrafficLightStatesGerman.GREEN);
+    public PedestrianStandard(String name) {
+        super(name, TrafficLightStatesPedestrian.GREEN);
+    }
+
+    public PedestrianStandard(String name, State initialState){
+        super(name, initialState);
     }
 
 

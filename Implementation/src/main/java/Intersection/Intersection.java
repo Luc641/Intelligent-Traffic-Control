@@ -1,6 +1,6 @@
 package Intersection;
 
-import TrafficLights.PedestrianLightStandard;
+import TrafficLights.PedestrianStandard;
 import TrafficLights.TrafficLightFactory;
 
 import javax.sound.sampled.LineUnavailableException;
@@ -21,20 +21,20 @@ public class Intersection {
         // Create traffic lights for the horizontal road.
         var first = trafficLightFactory.getTrafficLight("First");
         var second = trafficLightFactory.getTrafficLight("Second");
-        var pedFirst = new PedestrianLightStandard("Horizontal Ped");
+        var pedFirst = new PedestrianStandard("Horizontal Ped");
 
         // Create traffic lights for the vertical road.
         var inverse = first.getCurrentState().inverse();
         var third = trafficLightFactory.getTrafficLight("Third", inverse);
         var fourth = trafficLightFactory.getTrafficLight("Fourth", inverse);
-        var pedSecond = new PedestrianLightStandard("Vertical Ped");
+        var pedSecond = new PedestrianStandard("Vertical Ped");
 
         horizontal = new Road("Horizontal", first, second, pedFirst);
         vertical = new Road("Vertical", third, fourth, pedSecond);
     }
 
 
-    public void sequence() throws LineUnavailableException, InterruptedException {
+    public void sequence() {
         forkJoinPool.submit(horizontal::advanceOnce);
         forkJoinPool.submit(vertical::advanceOnce);
         //noinspection ResultOfMethodCallIgnored

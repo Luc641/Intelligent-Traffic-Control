@@ -1,6 +1,6 @@
 package TrafficLights;
 
-public enum TrafficLightStatesDutch implements State {
+public enum TrafficLightStatesPedestrian implements State {
 
     RED {
         @Override
@@ -14,22 +14,10 @@ public enum TrafficLightStatesDutch implements State {
         }
     },
 
-    YELLOW {
-        @Override
-        public void showSignalOnce(Context context) {
-            context.changeState(RED);
-        }
-
-        @Override
-        public State inverse() {
-            return YELLOW;
-        }
-    },
-
     GREEN {
         @Override
         public void showSignalOnce(Context context) {
-            context.changeState(YELLOW);
+            context.changeState(GREEN_BLINKING);
         }
 
         @Override
@@ -37,6 +25,16 @@ public enum TrafficLightStatesDutch implements State {
             return RED;
         }
 
+    },
+    GREEN_BLINKING {
+        @Override
+        public void showSignalOnce(Context context) {
+            context.changeState(RED);
+        }
+
+        @Override
+        public State inverse() {
+            return RED;
+        }
     }
 }
-

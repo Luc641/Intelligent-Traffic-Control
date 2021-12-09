@@ -1,7 +1,7 @@
 package Intersection;
 
 import TrafficLights.AbstractTrafficLight;
-import TrafficLights.PedestrianLightStandard;
+import TrafficLights.PedestrianStandard;
 import TrafficLights.State;
 
 import java.beans.PropertyChangeSupport;
@@ -17,7 +17,7 @@ public class Road {
     private final String name;
     private final PropertyChangeSupport support;
 
-    public Road(String name, AbstractTrafficLight trafficLightRight, AbstractTrafficLight trafficLightLeft, PedestrianLightStandard pedestrianLight) {
+    public Road(String name, AbstractTrafficLight trafficLightRight, AbstractTrafficLight trafficLightLeft, PedestrianStandard pedestrianLight) {
         this.trafficLightRight = trafficLightRight;
         this.trafficLightLeft = trafficLightLeft;
         this.pedestrianLight = pedestrianLight;

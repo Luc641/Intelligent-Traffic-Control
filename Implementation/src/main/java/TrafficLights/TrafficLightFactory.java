@@ -15,46 +15,31 @@ public enum TrafficLightFactory {
 
 
     },
-//    DUTCH {
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLight(String name) {
-//            return new DutchStandard(name);
-//        }
-//
-//    },
-//    PEDESTRIAN {
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLight(String name) {
-//            return new PedestrianLightStandard(name);
-//        }
-//
-//    };
-//
-//    GERMAN_ARROW_LEFT {
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLight (String name){
-//            return new GermanStandard(name);
-//        }
-//
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLightWithState (String name, AbstractTrafficLightStates state){
-//            return null;
-//        }
-//    },
-//
-//    GERMAN_ARROW_RIGHT {
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLight (String name){
-//            return new GermanStandard(name);
-//        }
-//
-//        @Override
-//        public AbstractTrafficLight getAbstractTrafficLightWithState (String name, AbstractTrafficLightStates state){
-//            return null;
-//        }
-//    }
+    DUTCH {
+        @Override
+        public AbstractTrafficLight getTrafficLight(String name) {
+            return new DutchStandard(name);
+        }
 
-    ;
+        @Override
+        public AbstractTrafficLight getTrafficLight(String name, State initialState) {
+            return new DutchStandard(name, initialState);
+        }
+
+    },
+    PEDESTRIAN {
+        @Override
+        public AbstractTrafficLight getTrafficLight(String name) {
+            return new PedestrianStandard(name);
+        }
+
+        @Override
+        public AbstractTrafficLight getTrafficLight(String name, State initialState) {
+            return new PedestrianStandard(name, initialState);
+        }
+
+    };
+
 
     public abstract AbstractTrafficLight getTrafficLight(String name);
 
