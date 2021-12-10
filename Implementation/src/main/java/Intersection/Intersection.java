@@ -23,7 +23,7 @@ public class Intersection {
         var second = trafficLightFactory.getTrafficLight("Second");
         var pedFirst = new PedestrianStandard("Horizontal Ped");
 
-        // Create traffic lights for the vertical road.
+        // Create traffic lights for the vertical road with inverse of the horizontal road.
         var inverse = first.getCurrentState().inverse();
         var third = trafficLightFactory.getTrafficLight("Third", inverse);
         var fourth = trafficLightFactory.getTrafficLight("Fourth", inverse);
