@@ -1,7 +1,7 @@
 package TrafficLights;
 
 public class DutchStandard extends AbstractTrafficLight {
-
+    //Constructor for the Standard
     private TrafficLightStatesDutch state;
 
     public DutchStandard(String name) {

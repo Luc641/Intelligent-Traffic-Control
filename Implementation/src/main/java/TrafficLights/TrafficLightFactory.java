@@ -1,7 +1,7 @@
 package TrafficLights;
 
 public enum TrafficLightFactory {
-
+// An enum that creates based on the input the correlating traffic light
     GERMAN {
         @Override
         public AbstractTrafficLight getTrafficLight(String name) {

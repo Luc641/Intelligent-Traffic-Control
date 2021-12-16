@@ -9,6 +9,8 @@ import java.beans.PropertyChangeListener;
 
 
 public class PedestrianStandard extends AbstractTrafficLight implements PropertyChangeListener {
+    //Constructor for the Standard
+    //implements a PropertyChangeListener to make it dependent on the TrafficLights
 
     public PedestrianStandard(String name) {
         super(name, TrafficLightStatesPedestrian.GREEN);

@@ -1,6 +1,7 @@
 package TrafficLights;
 
 public abstract class AbstractTrafficLight implements Context {
+    // A Abstract calss for trafficLights to be able to be used by multiple lights at once without them interfering
     private State currentState;
     private final String name;
 

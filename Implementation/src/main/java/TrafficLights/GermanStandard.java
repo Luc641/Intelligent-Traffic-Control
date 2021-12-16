@@ -1,6 +1,7 @@
 package TrafficLights;
 
 public class GermanStandard extends AbstractTrafficLight {
+    //Constructor for the Standard
 
     private TrafficLightStatesGerman state;
 

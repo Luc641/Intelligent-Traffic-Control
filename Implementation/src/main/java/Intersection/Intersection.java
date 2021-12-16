@@ -33,7 +33,7 @@ public class Intersection {
         vertical = new Road("Vertical", third, fourth, pedSecond);
     }
 
-
+// use fork join pools to cycle to the whole intersection of 2 roads
     public void sequence() {
         forkJoinPool.submit(horizontal::advanceOnce);
         forkJoinPool.submit(vertical::advanceOnce);

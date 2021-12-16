@@ -1,6 +1,10 @@
 package TrafficLights;
 
 public enum TrafficLightStatesPedestrian implements State {
+    //The enum used for representing the cycle of german traffic lights
+    // showSignalOnce shows the current state and also changes to the next state
+    // inverse shows the states inverse state
+
 
     RED {
         @Override

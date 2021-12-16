@@ -43,6 +43,7 @@ public class Road {
         };
     }
 
+    //let the complete road advance one cycle shifting
     void advanceOnce() {
         var old = getTrafficLightState();
         forkJoinPool.submit(wrapWithSleep(trafficLightRight::showCurrentSignal, TimeUnit.SECONDS));
@@ -51,6 +52,9 @@ public class Road {
         forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
         if (getTrafficLightState().toString().contains("RED")) {
             support.firePropertyChange("trafficLightStateChange", old, getTrafficLightState());
+            System.out.println(pedestrianLight.getCurrentState());
+
+        } else {
             System.out.println(pedestrianLight.getCurrentState());
         }
     }
