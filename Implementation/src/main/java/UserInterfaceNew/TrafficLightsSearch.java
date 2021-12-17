@@ -1,7 +1,4 @@
-package UserInterface;
-
-import Intersection.Intersection;
-import TrafficLights.*;
+package UserInterfaceNew;
 
 import java.util.Scanner;
 

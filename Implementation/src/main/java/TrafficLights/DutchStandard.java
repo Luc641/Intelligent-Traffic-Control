@@ -5,7 +5,7 @@ public class DutchStandard extends AbstractTrafficLight {
     private TrafficLightStatesDutch state;
 
     public DutchStandard(String name) {
-        this(name, TrafficLightStatesDutch.GREEN);
+        this(name, TrafficLightStatesDutch.RED);
     }
 
     public DutchStandard(String name, State initialState) {

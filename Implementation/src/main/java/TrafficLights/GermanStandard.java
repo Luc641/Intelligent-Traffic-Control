@@ -10,6 +10,6 @@ public class GermanStandard extends AbstractTrafficLight {
     }
 
     public GermanStandard(String name) {
-        this(name, TrafficLightStatesGerman.GREEN);
+        this(name, TrafficLightStatesGerman.RED);
     }
 }

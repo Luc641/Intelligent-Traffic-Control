@@ -13,7 +13,7 @@ public class PedestrianStandard extends AbstractTrafficLight implements Property
     //implements a PropertyChangeListener to make it dependent on the TrafficLights
 
     public PedestrianStandard(String name) {
-        super(name, TrafficLightStatesPedestrian.GREEN);
+        super(name, TrafficLightStatesPedestrian.RED);
     }
 
     public PedestrianStandard(String name, State initialState){
