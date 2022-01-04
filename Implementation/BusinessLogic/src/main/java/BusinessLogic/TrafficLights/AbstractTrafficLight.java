@@ -1,9 +1,10 @@
 package BusinessLogic.TrafficLights;
 
 import Entities.Context;
+import Entities.Cycle;
 import Entities.State;
 
-public abstract class AbstractTrafficLight implements Context {
+public abstract class AbstractTrafficLight implements Context, Cycle {
     // A Abstract calss for trafficLights to be able to be used by multiple lights at once without them interfering
     private State currentState;
     private final String name;
@@ -31,4 +32,8 @@ public abstract class AbstractTrafficLight implements Context {
         currentState.showSignalOnce(this);
     }
 
+    @Override
+    public void cycle() {
+        showCurrentSignal();
+    }
 }

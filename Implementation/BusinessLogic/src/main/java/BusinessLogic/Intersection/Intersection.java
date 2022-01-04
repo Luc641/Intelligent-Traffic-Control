@@ -2,13 +2,14 @@ package BusinessLogic.Intersection;
 
 import BusinessLogic.TrafficLights.PedestrianStandard;
 import BusinessLogic.TrafficLights.TrafficLightFactory;
+import Entities.Cycle;
 
 import java.beans.PropertyChangeSupport;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 
 
-public class Intersection {
+public class Intersection implements Cycle {
 
     private PropertyChangeSupport support;
     private final ForkJoinPool forkJoinPool = new ForkJoinPool(2);
@@ -39,5 +40,10 @@ public class Intersection {
         //noinspection ResultOfMethodCallIgnored
         forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
         System.out.println("--------");
+    }
+
+    @Override
+    public void cycle() {
+        sequence();
     }
 }

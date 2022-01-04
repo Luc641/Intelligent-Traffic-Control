@@ -2,13 +2,14 @@ package BusinessLogic.Intersection;
 
 import BusinessLogic.TrafficLights.AbstractTrafficLight;
 import BusinessLogic.TrafficLights.PedestrianStandard;
+import Entities.Cycle;
 import Entities.State;
 
 import java.beans.PropertyChangeSupport;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 
-public class Road {
+public class Road implements Cycle {
 
     private final AbstractTrafficLight pedestrianLight;
     private final AbstractTrafficLight trafficLightRight;
@@ -50,13 +51,17 @@ public class Road {
         forkJoinPool.submit(wrapWithSleep(trafficLightLeft::showCurrentSignal, TimeUnit.SECONDS));
         //noinspection ResultOfMethodCallIgnored
         forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
-        if (getTrafficLightState().toString().contains("RED")) {
-            support.firePropertyChange("trafficLightStateChange", old, getTrafficLightState());
-            System.out.println(pedestrianLight.getCurrentState());
-
-        } else {
-            System.out.println(pedestrianLight.getCurrentState());
-        }
+//        if (getTrafficLightState().toString().contains("RED")) {
+//            support.firePropertyChange("trafficLightStateChange", old, getTrafficLightState());
+//            System.out.println(pedestrianLight.getCurrentState());
+//
+//        } else {
+//            System.out.println(pedestrianLight.getCurrentState());
+//        }
     }
 
+    @Override
+    public void cycle() {
+        advanceOnce();
+    }
 }

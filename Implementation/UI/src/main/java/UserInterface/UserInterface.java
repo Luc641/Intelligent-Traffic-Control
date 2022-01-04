@@ -2,7 +2,7 @@ package UserInterface;
 import BusinessLogic.Intersection.Intersection;
 import BusinessLogic.Intersection.Road;
 import BusinessLogic.TrafficLights.*;
-
+import Entities.Cycle;
 import java.util.Scanner;
 
 public class UserInterface {
@@ -37,52 +37,36 @@ public class UserInterface {
                 """);
 
         Integer pattern = Integer.valueOf(scanner.nextLine());
-        TrafficLightFactory trafficLightFactory = null;
-        AbstractTrafficLight abstractTrafficLight = null;
-        Road road;
-        Intersection intersection = null;
+        Cycle cycle = null;
 
 
         if (type.equals(1)) {
             if (pattern.equals(1)) {
-                trafficLightFactory = TrafficLightFactory.DUTCH;
-                abstractTrafficLight = new DutchStandard("DUTCH");
+
+                cycle = new DutchStandard("DUTCH");
             } else if (pattern.equals(2)) {
-                trafficLightFactory = TrafficLightFactory.GERMAN;
-                abstractTrafficLight = new GermanStandard("GERMAN");
+
+                cycle = new GermanStandard("GERMAN");
             }
-            trafficLightFactory = TrafficLightFactory.PEDESTRIAN;
-            abstractTrafficLight = new PedestrianStandard("PEDESTRIAN");
         }
 
         if (type.equals(2)) {
             if (pattern.equals(1)) {
-                trafficLightFactory = TrafficLightFactory.DUTCH;
-                abstractTrafficLight = new DutchStandard("DUTCH");
-                road = new Road("ROAD", new DutchStandard("FIRST"), new DutchStandard("SECOND"), new PedestrianStandard("PEDESTRIAN"));
+                cycle = new Road("ROAD", new DutchStandard("FIRST"), new DutchStandard("SECOND"), new PedestrianStandard("PEDESTRIAN"));
             } else if (pattern.equals(2)) {
-                trafficLightFactory = TrafficLightFactory.GERMAN;
-                abstractTrafficLight = new GermanStandard("GERMAN");
-                road = new Road("ROAD", new GermanStandard("FIRST"), new GermanStandard("SECOND"), new PedestrianStandard("PEDESTRIAN"));
-
+                cycle = new Road("ROAD", new GermanStandard("FIRST"), new GermanStandard("SECOND"), new PedestrianStandard("PEDESTRIAN"));
             } else
                 System.out.println("That is not logical");
-
-
         }
 
         if (type.equals(3)) {
+            cycle = new PedestrianStandard("PEDESTRIAN");
             if (pattern.equals(1)) {
-                trafficLightFactory = TrafficLightFactory.DUTCH;
-                abstractTrafficLight = new DutchStandard("DUTCH");
-                intersection = new Intersection(TrafficLightFactory.DUTCH);
+                cycle = new Intersection(TrafficLightFactory.DUTCH);
             } else if (pattern.equals(2)) {
-                trafficLightFactory = TrafficLightFactory.GERMAN;
-                abstractTrafficLight = new GermanStandard("GERMAN");
-                intersection = new Intersection(TrafficLightFactory.GERMAN);
+                cycle = new Intersection(TrafficLightFactory.GERMAN);
             } else
                 System.out.println("Not going to work");
-
         }
 
         System.out.println();
@@ -114,22 +98,16 @@ public class UserInterface {
 
                 System.out.print("How many times do you want it to cycle: ");
 
-                int cycle = Integer.parseInt(scanner.nextLine());
+                int cycling = Integer.parseInt(scanner.nextLine());
 
                 System.out.println();
 
                 System.out.println("Cycling \n" +
-                        cycle + " times");
+                        cycling + " times");
 
-                for (int i = cycle; i < 10; i++) {
-                    if (type.equals(1)) {
-                        assert abstractTrafficLight != null;
-                        abstractTrafficLight.showCurrentSignal();
-                    } else if (type.equals(2)) {
-
-                    }
-                    assert intersection != null;
-                    intersection.sequence();
+                for (int i = 0; i < cycling; i++) {
+                    assert cycle != null;
+                    cycle.cycle();
 
                 }
 
