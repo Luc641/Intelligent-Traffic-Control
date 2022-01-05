@@ -12,7 +12,6 @@ import java.beans.PropertyChangeListener;
 
 public class PedestrianStandard extends AbstractTrafficLight implements PropertyChangeListener {
     //Constructor for the Standard
-    //implements a PropertyChangeListener to make it dependent on the TrafficLights
 
     public PedestrianStandard(String name) {
         super(name, TrafficLightStatesPedestrian.RED);
@@ -22,15 +21,11 @@ public class PedestrianStandard extends AbstractTrafficLight implements Property
         super(name, initialState);
     }
 
-
-//    @Override
-//    public void nightMode() {
-//        setTrafficLightState(TrafficLightStates.OFF);
-//    }
-
+    /**
+     * @param evt implements a PropertyChangeListener to make it dependent on the TrafficLights
+     */
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        // am besten function schreiben, die country enums auf deinen pedestrian enum mappt.
         changeState((State) evt.getOldValue());
     }
 

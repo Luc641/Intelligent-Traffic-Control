@@ -18,6 +18,13 @@ public class Road implements Cycle {
     private final String name;
     private final PropertyChangeSupport support;
 
+    /**
+     * @param name              Name for the road to distinguish
+     * @param trafficLightRight set the traffic light on the right side
+     * @param trafficLightLeft  same as right but for left
+     * @param pedestrianLight   set the pedestrian light
+     */
+
     public Road(String name, AbstractTrafficLight trafficLightRight, AbstractTrafficLight trafficLightLeft, PedestrianStandard pedestrianLight) {
         this.trafficLightRight = trafficLightRight;
         this.trafficLightLeft = trafficLightLeft;
@@ -33,18 +40,27 @@ public class Road implements Cycle {
         return trafficLightLeft.getCurrentState();
     }
 
+    /**
+     * @param toWrap wraps the road
+     * @param unit   giving the time
+     * @return returns the amount of time between cycling
+     */
+
     private Runnable wrapWithSleep(Runnable toWrap, TimeUnit unit) {
         return () -> {
             toWrap.run();
             try {
-                unit.sleep(5);
+                unit.sleep(3);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         };
     }
 
-    //let the complete road advance one cycle shifting
+    /**
+     * let the complete road advance one cycle shifting
+     */
+
     void advanceOnce() {
         var old = getTrafficLightState();
         forkJoinPool.submit(wrapWithSleep(trafficLightRight::showCurrentSignal, TimeUnit.SECONDS));
@@ -59,6 +75,10 @@ public class Road implements Cycle {
 //            System.out.println(pedestrianLight.getCurrentState());
 //        }
     }
+
+    /**
+     * sets the cycle for the road
+     */
 
     @Override
     public void cycle() {

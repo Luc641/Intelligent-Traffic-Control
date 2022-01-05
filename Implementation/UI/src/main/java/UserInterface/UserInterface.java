@@ -1,8 +1,13 @@
 package UserInterface;
+
 import BusinessLogic.Intersection.Intersection;
 import BusinessLogic.Intersection.Road;
-import BusinessLogic.TrafficLights.*;
+import BusinessLogic.TrafficLights.DutchStandard;
+import BusinessLogic.TrafficLights.GermanStandard;
+import BusinessLogic.TrafficLights.PedestrianStandard;
+import BusinessLogic.TrafficLights.TrafficLightFactory;
 import Entities.Cycle;
+
 import java.util.Scanner;
 
 public class UserInterface {

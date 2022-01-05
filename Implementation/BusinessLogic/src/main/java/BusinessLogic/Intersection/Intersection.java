@@ -17,6 +17,10 @@ public class Intersection implements Cycle {
     Road vertical;
 
 
+    /**
+     * @param trafficLightFactory create an intersection with 2 roads based on the given TrafficLight Type
+     */
+
     public Intersection(TrafficLightFactory trafficLightFactory) {
         // Create traffic lights for the horizontal road.
         var first = trafficLightFactory.getTrafficLight("First");
@@ -33,7 +37,10 @@ public class Intersection implements Cycle {
         vertical = new Road("Vertical", third, fourth, pedSecond);
     }
 
-// use fork join pools to cycle to the whole intersection of 2 roads
+    /**
+     * use fork join pools to cycle to the whole intersection of 2 roads
+     */
+
     public void sequence() {
         forkJoinPool.submit(horizontal::advanceOnce);
         forkJoinPool.submit(vertical::advanceOnce);
@@ -41,6 +48,10 @@ public class Intersection implements Cycle {
         forkJoinPool.awaitQuiescence(1, TimeUnit.MINUTES);
         System.out.println("--------");
     }
+
+    /**
+     * Override the cycle method with the intersection sequence method used for cycling
+     */
 
     @Override
     public void cycle() {

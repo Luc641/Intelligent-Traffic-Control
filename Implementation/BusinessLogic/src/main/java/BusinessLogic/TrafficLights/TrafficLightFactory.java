@@ -3,7 +3,10 @@ package BusinessLogic.TrafficLights;
 import Entities.State;
 
 public enum TrafficLightFactory {
-// An enum that creates based on the input the correlating traffic light
+    /**
+     * An enum that creates based on the input the correlating traffic light
+     */
+
     GERMAN {
         @Override
         public AbstractTrafficLight getTrafficLight(String name) {

@@ -5,7 +5,10 @@ import Entities.Cycle;
 import Entities.State;
 
 public abstract class AbstractTrafficLight implements Context, Cycle {
-    // A Abstract calss for trafficLights to be able to be used by multiple lights at once without them interfering
+    /**
+     * An Abstract class for trafficLights to be able to be used by multiple lights at once without them interfering
+     */
+
     private State currentState;
     private final String name;
 
@@ -28,7 +31,7 @@ public abstract class AbstractTrafficLight implements Context, Cycle {
     }
 
     public void showCurrentSignal() {
-        System.out.println( name + " Traffic Light: " + currentState);
+        System.out.println(name + " Traffic Light: " + currentState);
         currentState.showSignalOnce(this);
     }
 
