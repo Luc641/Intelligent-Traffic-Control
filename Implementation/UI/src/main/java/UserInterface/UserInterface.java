@@ -28,8 +28,8 @@ public class UserInterface {
         System.out.print("""
                 Choose what kind of function to display:\s
                 1 = Simple Traffic Light\s
-                2 = Road (2 traffic Light + 1 Pedestrian Light
-                3 = Intersection (2 Roads, 4 Traffic Lights)
+                2 = Road
+                3 = Intersection
                 """);
 
         Integer type = Integer.valueOf(scanner.nextLine());
@@ -52,6 +52,8 @@ public class UserInterface {
             } else if (pattern.equals(2)) {
 
                 cycle = new GermanStandard("GERMAN");
+            } else if (pattern.equals(3)) {
+                cycle = new PedestrianStandard("PEDESTRIAN");
             }
         }
 
@@ -65,7 +67,6 @@ public class UserInterface {
         }
 
         if (type.equals(3)) {
-            cycle = new PedestrianStandard("PEDESTRIAN");
             if (pattern.equals(1)) {
                 cycle = new Intersection(TrafficLightFactory.DUTCH);
             } else if (pattern.equals(2)) {
